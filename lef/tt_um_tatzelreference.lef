@@ -439,6 +439,10 @@ MACRO tt_um_tatzelreference
         RECT 7.000 5.000 9.000 220.760 ;
     END
   END VAPWR
+  OBS
+      LAYER met3 ;
+        RECT 116.850 0.000 137.070 1.000 ;
+  END
 END tt_um_tatzelreference
 END LIBRARY
 
