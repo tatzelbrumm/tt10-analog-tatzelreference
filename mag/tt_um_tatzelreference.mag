@@ -56,9 +56,6 @@ rect 3957 0 4047 100
 rect 5889 0 5979 100
 rect 7821 0 7911 100
 rect 9753 0 9843 100
-<< comment >>
-rect 11685 0 11775 100
-rect 13617 0 13707 100
 << labels >>
 flabel metal4 s 12819 22476 12849 22576 0 FreeSans 240 90 0 0 clk
 port 0 nsew signal input
