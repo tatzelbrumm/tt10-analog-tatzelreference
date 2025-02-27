@@ -15,13 +15,6 @@ A realization of a sensor resistance function that Ella Janotte shared:
 ![Sensor resistance plot](./graphR.jpg)
 ![Sensor equation](./eqnR.jpg)
 
-### circuits
-
-* `1t1r_nmos`
-* `Wheatstone`
-* `AxionHillock`
-* `DPI_neuron`
-
 ### playground
 
 * `nfet_03v3_gmtest`  
