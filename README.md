@@ -5,16 +5,6 @@ Telluride Workshop 2021, under the
 
 ## Contents
 
-* `test_vccs`
-A first stab at controlled sources in xschem/ngspice
-
-### sensormodels
-
-* `b_source_magic`, `piezoresistor`  
-A realization of a sensor resistance function that Ella Janotte shared:
-![Sensor resistance plot](./graphR.jpg)
-![Sensor equation](./eqnR.jpg)
-
 ### playground
 
 * `nfet_03v3_gmtest`  
