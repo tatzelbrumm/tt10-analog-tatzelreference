@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>pin_label_purposes_overlapping_drawing.rb.drc, input=/home/runner/work/tt10-analog-tatzelreference/tt10-analog-tatzelreference/tt_submission/tt_um_tatzelreference.gds, topcell=</description>
+ <original-file/>
+ <generator>drc: script='tech-files/pin_label_purposes_overlapping_drawing.rb.drc'</generator>
+ <top-cell>tt_um_tatzelreference</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>71/16: met4, pin/label not-over drawing:71/20</name>
+   <description/>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>tt_um_tatzelreference</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'71/16: met4, pin/label not-over drawing:71/20'</category>
+   <cell>tt_um_tatzelreference</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (136.17,0;136.17,1;137.07,1;137.07,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'71/16: met4, pin/label not-over drawing:71/20'</category>
+   <cell>tt_um_tatzelreference</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (116.85,0;116.85,1;117.75,1;117.75,0)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

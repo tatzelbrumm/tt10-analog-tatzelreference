@@ -1,0 +1,40 @@
+<testsuites>
+  <testsuite name="Tiny Tapeout Prechecks">
+    <testcase name="Magic DRC" time="0.41">
+      <error message="Magic DRC failed">Traceback (most recent call last):
+  File "/home/runner/work/tt10-analog-tatzelreference/tt10-analog-tatzelreference/tt/precheck/precheck.py", line 332, in main
+    check()
+  File "/home/runner/work/tt10-analog-tatzelreference/tt10-analog-tatzelreference/tt/precheck/precheck.py", line 293, in &lt;lambda&gt;
+    ["Magic DRC", lambda: magic_drc(gds_file, top_module)],
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tt10-analog-tatzelreference/tt10-analog-tatzelreference/tt/precheck/precheck.py", line 61, in magic_drc
+    raise PrecheckFailure("Magic DRC failed")
+precheck_failure.PrecheckFailure: Magic DRC failed
+</error>
+    </testcase>
+    <testcase name="KLayout FEOL" time="1.74" />
+    <testcase name="KLayout BEOL" time="1.75" />
+    <testcase name="KLayout offgrid" time="1.54" />
+    <testcase name="KLayout pin label overlapping drawing" time="1.3">
+      <error message="Klayout pin_label_purposes_overlapping_drawing failed">Traceback (most recent call last):
+  File "/home/runner/work/tt10-analog-tatzelreference/tt10-analog-tatzelreference/tt/precheck/precheck.py", line 332, in main
+    check()
+  File "/home/runner/work/tt10-analog-tatzelreference/tt10-analog-tatzelreference/tt/precheck/precheck.py", line 299, in &lt;lambda&gt;
+    lambda: klayout_drc(
+            ^^^^^^^^^^^^
+  File "/home/runner/work/tt10-analog-tatzelreference/tt10-analog-tatzelreference/tt/precheck/precheck.py", line 77, in klayout_drc
+    raise PrecheckFailure(f"Klayout {check} failed")
+precheck_failure.PrecheckFailure: Klayout pin_label_purposes_overlapping_drawing failed
+</error>
+    </testcase>
+    <testcase name="KLayout zero area" time="1.26" />
+    <testcase name="KLayout Checks" time="0.01" />
+    <testcase name="Pin check" time="0.0" />
+    <testcase name="Boundary check" time="0.0" />
+    <testcase name="Power pin check" time="0.0" />
+    <testcase name="Layer check" time="0.0" />
+    <testcase name="Cell name check" time="0.0" />
+    <testcase name="urpm/nwell check" time="1.25" />
+    <testcase name="Analog pin check" time="0.0" />
+  </testsuite>
+</testsuites>
