@@ -1,8 +1,11 @@
 magic
 tech sky130A
-timestamp 1740689597
-<< comment >>
+timestamp 1740695003
+<< isosubstrate >>
 rect 0 0 14536 22576
+<< metal4 >>
+rect 11685 0 11775 200
+rect 13617 0 13707 200
 << properties >>
 string FIXED_BBOX 0 0 14536 22576
 << end >>
