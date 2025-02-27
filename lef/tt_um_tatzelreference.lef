@@ -441,8 +441,8 @@ MACRO tt_um_tatzelreference
   END VAPWR
   OBS
       LAYER met4 ;
-        RECT 116.850 1.400 137.070 1.500 ;
-        RECT 118.150 1.100 135.770 1.400 ;
+        RECT 116.850 1.400 137.070 2.000 ;
+        RECT 118.150 1.000 135.770 1.400 ;
   END
 END tt_um_tatzelreference
 END LIBRARY
