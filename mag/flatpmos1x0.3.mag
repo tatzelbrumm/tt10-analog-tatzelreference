@@ -2,21 +2,21 @@ magic
 tech sky130A
 timestamp 1740761609
 << nwell >>
-rect -62 -81 62 81
+rect -81 -62 81 62
 << pdiff >>
-rect -44 -50 44 50
+rect -50 -44 50 44
 << pdiffc >>
-rect -38 -44 -21 44
-rect 21 -44 38 44
+rect -44 -38 44 -21
+rect -44 21 44 38
 << poly >>
-rect -15 -63 15 63
+rect -63 -15 63 15
 << locali >>
-rect -38 -52 -21 52
-rect 21 -52 38 52
+rect -52 -38 52 -21
+rect -52 21 52 38
 << viali >>
-rect -38 -44 -21 44
-rect 21 -44 38 44
+rect -44 -38 44 -21
+rect -44 21 44 38
 << metal1 >>
-rect -41 -50 -18 50
-rect 18 -50 41 50
+rect -50 -41 50 -18
+rect -50 18 50 41
 << end >>
