@@ -3,38 +3,20 @@ tech sky130A
 timestamp 1740761609
 << nwell >>
 rect -97 -81 97 81
-<< pmos >>
-rect -50 -50 50 50
 << pdiff >>
-rect -79 44 -50 50
-rect -79 -44 -73 44
-rect -56 -44 -50 44
-rect -79 -50 -50 -44
-rect 50 44 79 50
-rect 50 -44 56 44
-rect 73 -44 79 44
-rect 50 -50 79 -44
+rect -79 -50 79 50
 << pdiffc >>
 rect -73 -44 -56 44
 rect 56 -44 73 44
 << poly >>
-rect -50 50 50 63
-rect -50 -63 50 -50
+rect -50 -63 50 63
 << locali >>
-rect -73 44 -56 52
-rect -73 -52 -56 -44
-rect 56 44 73 52
-rect 56 -52 73 -44
+rect -73 -52 -56 52
+rect 56 -52 73 52
 << viali >>
 rect -73 -44 -56 44
 rect 56 -44 73 44
 << metal1 >>
-rect -76 44 -53 50
-rect -76 -44 -73 44
-rect -56 -44 -53 44
-rect -76 -50 -53 -44
-rect 53 44 76 50
-rect 53 -44 56 44
-rect 73 -44 76 44
-rect 53 -50 76 -44
+rect -76 -50 -53 50
+rect 53 -50 76 50
 << end >>
