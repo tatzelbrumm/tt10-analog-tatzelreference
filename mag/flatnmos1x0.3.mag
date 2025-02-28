@@ -1,0 +1,20 @@
+magic
+tech sky130A
+timestamp 1740761609
+<< ndiff >>
+rect -50 -44 50 44
+<< ndiffc >>
+rect -44 -38 44 -21
+rect -44 21 44 38
+<< poly >>
+rect -63 -15 63 15
+<< locali >>
+rect -52 -38 52 -21
+rect -52 21 52 38
+<< viali >>
+rect -44 -38 44 -21
+rect -44 21 44 38
+<< metal1 >>
+rect -50 -41 50 -18
+rect -50 18 50 41
+<< end >>
