@@ -1,0 +1,12 @@
+magic
+tech sky130A
+timestamp 1740761609
+<< ndiff >>
+rect -431 -79 -331 79
+rect -304 -79 -204 79
+rect -177 -79 -77 79
+rect -50 -79 50 79
+rect 77 -79 177 79
+rect 204 -79 304 79
+rect 331 -79 431 79
+<< end >>
