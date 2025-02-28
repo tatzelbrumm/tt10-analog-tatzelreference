@@ -54,8 +54,10 @@ value="
 .control
 save all
 op
+remzerovec
 write test_Bias.op.raw
 tran 10u 2
+remzerovec
 write test_Bias.raw
 plot vdd vbp vbn vres
 plot v.xbias.vi1#branch v.xbias.vi4#branch

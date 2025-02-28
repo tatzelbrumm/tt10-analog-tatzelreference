@@ -56,8 +56,10 @@ value="
 .control
 save all
 op
+remzerovec
 write test_OgueyAebischerBias.op.raw
 tran 10u 2
+remzerovec
 write test_OgueyAebischerBias.raw
 plot vdd vbp vbn vbr xbias.vres
 plot v.xbias.vi1#branch v.xbias.vi4#branch v.xbias.viaux#branch
