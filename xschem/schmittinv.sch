@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.4.5 file_version=1.2
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -23,101 +23,135 @@ E {}
 N 460 -140 480 -140 { lab=vss}
 N 480 -140 480 -80 { lab=vss}
 N 460 -110 460 -80 { lab=vss}
-N 460 -460 480 -460 { lab=vdd}
-N 460 -520 480 -520 { lab=vdd}
-N 460 -520 460 -490 { lab=vdd}
-N 600 -220 620 -220 { lab=vss}
-N 600 -220 600 -80 { lab=vss}
-N 600 -380 620 -380 { lab=vdd}
-N 360 -300 400 -300 { lab=in}
-N 480 -520 480 -460 { lab=vdd}
+N 460 -540 480 -540 { lab=vdd}
+N 460 -600 480 -600 { lab=vdd}
+N 460 -600 460 -570 { lab=vdd}
+N 600 -460 620 -460 { lab=vdd}
+N 360 -380 400 -380 { lab=in}
+N 480 -600 480 -540 { lab=vdd}
 N 460 -80 480 -80 { lab=vss}
-N 660 -220 680 -220 { lab=out}
+N 660 -320 680 -320 { lab=out}
 N 400 -140 420 -140 { lab=in}
-N 400 -460 420 -460 { lab=in}
-N 660 -380 680 -380 { lab=out}
+N 400 -540 420 -540 { lab=in}
+N 660 -460 680 -460 { lab=out}
 N 400 -220 400 -140 { lab=in}
-N 400 -380 400 -300 { lab=in}
-N 460 -380 480 -380 { lab=vdd}
-N 400 -380 420 -380 { lab=in}
-N 460 -220 480 -220 { lab=vss}
-N 400 -220 420 -220 { lab=in}
-N 480 -220 480 -140 { lab=vss}
-N 480 -460 480 -380 { lab=vdd}
-N 460 -180 460 -170 { lab=dn}
-N 460 -420 460 -410 { lab=dp}
-N 460 -300 460 -250 { lab=out}
-N 460 -300 740 -300 { lab=out}
-N 620 -280 620 -250 { lab=vdd}
-N 460 -180 620 -180 { lab=dn}
-N 460 -420 620 -420 { lab=dp}
-N 620 -420 620 -410 { lab=dp}
-N 620 -190 620 -180 { lab=dn}
 N 400 -460 400 -380 { lab=in}
-N 400 -300 400 -220 { lab=in}
-N 460 -350 460 -300 { lab=out}
-N 460 -190 460 -180 { lab=dn}
-N 460 -430 460 -420 { lab=dp}
-N 480 -520 600 -520 { lab=vdd}
-N 600 -520 600 -380 { lab=vdd}
+N 460 -460 480 -460 { lab=vdd}
+N 400 -460 420 -460 { lab=in}
+N 460 -300 480 -300 { lab=vss}
+N 400 -300 420 -300 { lab=in}
+N 480 -220 480 -140 { lab=vss}
+N 480 -540 480 -460 { lab=vdd}
+N 460 -260 460 -250 { lab=dn}
+N 460 -500 460 -490 { lab=dp}
+N 460 -380 460 -330 { lab=out}
+N 460 -380 740 -380 { lab=out}
+N 460 -500 620 -500 { lab=dp}
+N 620 -500 620 -490 { lab=dp}
+N 620 -290 620 -280 { lab=dsn}
+N 400 -540 400 -460 { lab=in}
+N 400 -380 400 -300 { lab=in}
+N 460 -430 460 -380 { lab=out}
+N 460 -270 460 -260 { lab=dn}
+N 460 -510 460 -500 { lab=dp}
+N 480 -600 600 -600 { lab=vdd}
+N 600 -600 600 -460 { lab=vdd}
 N 480 -80 600 -80 { lab=vss}
-N 540 -340 620 -280 { lab=vdd}
-N 540 -520 540 -340 { lab=vdd}
-N 620 -350 620 -320 { lab=vss}
-N 540 -260 620 -320 { lab=vss}
-N 540 -260 540 -80 { lab=vss}
-N 680 -300 680 -220 { lab=out}
-N 680 -380 680 -300 { lab=out}
-N 360 -520 460 -520 { lab=vdd}
+N 540 -420 620 -360 { lab=vdd}
+N 540 -600 540 -420 { lab=vdd}
+N 620 -430 620 -400 { lab=vss}
+N 540 -340 620 -400 { lab=vss}
+N 680 -460 680 -380 { lab=out}
+N 360 -600 460 -600 { lab=vdd}
 N 360 -80 460 -80 { lab=vss}
+N 480 -300 480 -220 {
+lab=vss}
+N 400 -300 400 -220 {
+lab=in}
+N 460 -250 460 -170 {
+lab=dn}
+N 540 -340 540 -260 {
+lab=vss}
+N 600 -240 620 -240 { lab=vss}
+N 660 -240 680 -240 { lab=out}
+N 620 -210 620 -200 { lab=dn}
+N 540 -260 540 -80 {
+lab=vss}
+N 620 -360 620 -350 {
+lab=vdd}
+N 460 -190 620 -190 {
+lab=dn}
+N 620 -200 620 -190 {
+lab=dn}
+N 680 -320 680 -240 {
+lab=out}
+N 680 -380 680 -320 {
+lab=out}
+N 600 -300 600 -240 {
+lab=vss}
+N 600 -240 600 -80 {
+lab=vss}
+N 620 -280 620 -270 {
+lab=dsn}
+N 600 -320 620 -320 {}
+N 600 -320 600 -300 {}
 C {sky130_fd_pr/nfet_01v8.sym} 440 -140 0 0 {name=M1
-L=32
+L=8
 W=0.5  
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 440 -460 0 0 {name=M5
-L=8
+C {sky130_fd_pr/pfet_01v8.sym} 440 -540 0 0 {name=M5
+L=2
 W=0.5
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 640 -220 0 1 {name=M3
-L=96
+C {sky130_fd_pr/nfet_01v8.sym} 640 -320 0 1 {name=M3
+L=12
 W=0.5
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 640 -380 0 1 {name=M6
-L=16
+C {sky130_fd_pr/pfet_01v8.sym} 640 -460 0 1 {name=M6
+L=4
 W=0.5
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 620 -180 2 0 {name=l2 lab=dn
+C {devices/lab_pin.sym} 620 -280 2 0 {name=l2 lab=dsn
 }
 C {devices/title.sym} 160 0 0 0 {name=l5 author="Christoph Maier"}
-C {sky130_fd_pr/pfet_01v8.sym} 440 -380 0 0 {name=M4
-L=8
+C {sky130_fd_pr/pfet_01v8.sym} 440 -460 0 0 {name=M4
+L=2
 W=0.5
 nf=1 mult=1
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 440 -220 0 0 {name=M2
-L=32
+C {sky130_fd_pr/nfet_01v8.sym} 440 -300 0 0 {name=M2
+L=8
 W=0.5 
 nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 620 -420 2 0 {name=l1 lab=dp
+C {devices/lab_pin.sym} 620 -500 2 0 {name=l1 lab=dp
 }
-C {devices/iopin.sym} 360 -520 0 1 {name=p1 lab=vdd}
+C {devices/iopin.sym} 360 -600 0 1 {name=p1 lab=vdd}
 C {devices/iopin.sym} 360 -80 0 1 {name=p2 lab=vss}
-C {devices/ipin.sym} 360 -300 0 0 {name=p3 lab=in}
-C {devices/opin.sym} 740 -300 0 0 {name=p4 lab=out}
+C {devices/ipin.sym} 360 -380 0 0 {name=p3 lab=in}
+C {devices/opin.sym} 740 -380 0 0 {name=p4 lab=out}
+C {sky130_fd_pr/nfet_01v8.sym} 640 -240 0 1 {name=M30
+L=12
+W=0.5
+nf=1 mult=1
+model=nfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 620 -200 2 0 {name=l3 lab=dn
+}

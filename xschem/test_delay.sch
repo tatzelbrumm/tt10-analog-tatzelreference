@@ -1,4 +1,4 @@
-v {xschem version=2.9.9 file_version=1.2 
+v {xschem version=3.4.5 file_version=1.2
 
 * Copyright 2020 Stefan Frederik Schippers
 * 
@@ -126,6 +126,7 @@ value="
 .control
 save all
 tran 10n 3m
+remzerovec
 write test_delay.raw
 plot in out1 out2 out3 out4
 plot v(out1,out2) v(out3,out4)
@@ -137,7 +138,7 @@ C {devices/lab_pin.sym} 380 -80 0 0 {name=l1 lab=0}
 C {devices/code.sym} 30 -230 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value=".lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
+value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
 
 .param mc_mm_switch=0
 .param mc_pr_switch=1
