@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -29,8 +30,8 @@ N 440 -320 480 -320 { lab=disable}
 N 820 -340 840 -340 { lab=vbn}
 N 640 -260 840 -260 { lab=vbn}
 N 380 -200 440 -200 { lab=0}
-N 880 -320 880 -280 { lab=Rext}
-N 820 -320 880 -320 { lab=Rext}
+N 880 -320 880 -280 { lab=vres}
+N 820 -320 880 -320 { lab=vres}
 N 880 -220 880 -200 { lab=0}
 N 760 -200 880 -200 { lab=0}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Christoph Maier"}
@@ -63,7 +64,7 @@ plot v.xbias.vi1#branch v.xbias.vi4#branch
 C {devices/code.sym} 110 -210 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
-value=".lib \\\\$::SKYWATER_MODELS\\\\/models/sky130.lib.spice tt
+value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
 
 .param mc_mm_switch=0
 .param mc_pr_switch=1
