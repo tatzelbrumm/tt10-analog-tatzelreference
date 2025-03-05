@@ -56,6 +56,8 @@ rect 796 101 822 127
 rect -9 181 931 207
 rect -9 141 931 167
 rect -9 101 931 127
+rect -9 -102 931 -76
+rect -9 -142 931 -118
 use nmos_5x  nmos_5x_1
 timestamp 1740961960
 transform -1 0 462 0 1 14
