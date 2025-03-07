@@ -2,12 +2,12 @@ magic
 tech sky130A
 timestamp 1741330361
 << metal2 >>
-rect -470 387 470 413
-rect -470 181 470 207
-rect -470 141 470 167
-rect -470 101 470 127
-rect -470 -102 470 -76
-rect -470 -142 470 -116
+rect -292 387 145 413
+rect -292 181 145 207
+rect -292 141 145 167
+rect -292 101 145 127
+rect -292 -102 145 -76
+rect -292 -142 145 -116
 use flatpmos1x0.3  flatpmos1x0.3_0
 timestamp 1740761609
 transform 1 0 -211 0 1 285
