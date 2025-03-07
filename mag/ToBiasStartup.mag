@@ -2,7 +2,10 @@ magic
 tech sky130A
 timestamp 1740961960
 << metal2 >>
+rect -9 -142 931 -116
+rect -9 -102 931 -76
 rect -9 181 931 207
 rect -9 141 931 167
 rect -9 101 931 127
+rect -9 387 931 413
 << end >>
