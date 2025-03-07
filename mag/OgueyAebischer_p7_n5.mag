@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1740961960
+timestamp 1741324827
 << nwell >>
 rect 0 392 924 446
 << psubdiff >>
@@ -61,10 +61,13 @@ rect 610 181 636 207
 rect 669 141 695 167
 rect 737 181 763 207
 rect 796 101 822 127
-rect 229 -102 255 -76
-rect 356 -102 382 -76
-rect 542 -102 568 -76
-rect 669 -102 695 -76
+rect 34 387 128 413
+rect 161 387 255 413
+rect 288 387 382 413
+rect 415 387 509 413
+rect 542 387 636 413
+rect 669 387 763 413
+rect 796 387 890 413
 rect 415 -142 509 -116
 << metal2 >>
 rect -9 -142 931 -116
@@ -72,12 +75,13 @@ rect -9 -102 931 -76
 rect -9 181 931 207
 rect -9 141 931 167
 rect -9 101 931 127
+rect -9 387 931 413
 use nmos_5x  nmos_5x_1
-timestamp 1740961960
+timestamp 1740761609
 transform -1 0 462 0 1 14
 box -327 -79 327 79
 use pmos_7x  pmos_7x_0
-timestamp 1740961960
+timestamp 1741324827
 transform 1 0 462 0 1 297
 box -462 -97 462 97
 << end >>
