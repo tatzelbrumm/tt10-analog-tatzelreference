@@ -1,8 +1,12 @@
 magic
 tech sky130A
-timestamp 1741273084
+timestamp 1741598865
 use OgueyAebischer_p7_n5  OgueyAebischer_p7_n5_0
-timestamp 1741273084
+timestamp 1741598865
 transform 1 0 0 0 1 0
 box -9 -142 931 446
+use ToBiasStartup  ToBiasStartup_0
+timestamp 1741351503
+transform 1 0 -140 0 1 0
+box -292 -142 145 413
 << end >>
