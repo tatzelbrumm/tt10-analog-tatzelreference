@@ -1,6 +1,8 @@
 magic
 tech sky130A
-timestamp 1741811270
+timestamp 1741818438
+<< nwell >>
+rect -177 200 -4 446
 << viali >>
 rect 672 -203 760 -186
 rect 799 -203 887 -186
@@ -40,24 +42,24 @@ rect 34 -102 128 -76
 rect 669 -142 763 -116
 rect 796 -142 890 -116
 << metal2 >>
-rect -144 387 946 413
-rect -144 181 946 207
-rect -144 141 946 167
-rect -144 101 -141 127
+rect -177 387 974 413
+rect -177 181 974 207
+rect -176 141 974 167
+rect -177 101 -141 127
 rect -115 101 -93 127
 rect 1 101 912 127
-rect 938 101 946 127
-rect -144 -102 34 -76
-rect 128 -102 946 -76
-rect -144 -142 669 -116
+rect 938 101 974 127
+rect -177 -102 34 -76
+rect 128 -102 974 -76
+rect -177 -142 669 -116
 rect 763 -142 796 -116
-rect 890 -142 946 -116
+rect 890 -142 974 -116
 use nmos_1x80_2x  nmos_1x80_2x_1
-timestamp 1741810884
+timestamp 1741818438
 transform 1 0 -140 0 -1 -233
 box -37 -77 1114 2135
 use OgueyAebischer_p7_n5  OgueyAebischer_p7_n5_0
-timestamp 1741324827
+timestamp 1741818438
 transform 1 0 0 0 1 0
 box -22 -142 946 446
 << end >>
