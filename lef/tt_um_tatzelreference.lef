@@ -1,3 +1,7 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
 MACRO tt_um_tatzelreference
   CLASS BLOCK ;
   FOREIGN tt_um_tatzelreference ;
@@ -436,6 +440,14 @@ MACRO tt_um_tatzelreference
     END
   END VAPWR
   OBS
+      LAYER nwell ;
+        RECT 45.110 34.220 54.790 36.680 ;
+      LAYER li1 ;
+        RECT 43.580 8.850 55.050 36.460 ;
+      LAYER met1 ;
+        RECT 43.890 8.540 54.790 36.500 ;
+      LAYER met2 ;
+        RECT 43.890 30.800 54.790 36.350 ;
       LAYER met4 ;
         RECT 39.570 1.400 137.070 2.000 ;
         RECT 40.870 1.000 58.490 1.400 ;
