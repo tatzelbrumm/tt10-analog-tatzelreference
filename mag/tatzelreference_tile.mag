@@ -1,9 +1,13 @@
 magic
 tech sky130A
-timestamp 1740695003
+timestamp 1741802569
 << isosubstrate >>
 rect 0 0 14536 22576
 << metal4 >>
+rect 3957 0 4047 200
+rect 5889 0 5979 200
+rect 7821 0 7911 200
+rect 9753 0 9843 200
 rect 11685 0 11775 200
 rect 13617 0 13707 200
 << properties >>
