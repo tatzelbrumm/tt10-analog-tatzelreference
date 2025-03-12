@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1741801604
+timestamp 1741811270
 << viali >>
 rect 672 -203 760 -186
 rect 799 -203 887 -186
@@ -47,18 +47,17 @@ rect -144 101 -141 127
 rect -115 101 -93 127
 rect 1 101 912 127
 rect 938 101 946 127
-rect -144 -49 946 -23
 rect -144 -102 34 -76
 rect 128 -102 946 -76
 rect -144 -142 669 -116
 rect 763 -142 796 -116
 rect 890 -142 946 -116
 use nmos_1x80_2x  nmos_1x80_2x_1
-timestamp 1741801604
+timestamp 1741810884
 transform 1 0 -140 0 -1 -233
 box -37 -77 1114 2135
 use OgueyAebischer_p7_n5  OgueyAebischer_p7_n5_0
-timestamp 1741801604
+timestamp 1741324827
 transform 1 0 0 0 1 0
 box -22 -142 946 446
 << end >>
