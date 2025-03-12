@@ -19,6 +19,10 @@ module tt_um_tatzelreference (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
+  wire foo;
+  wire bar;
+  wire baz;
+  wire qux;
 
   assign uo_out[0] = VGND;
   assign uo_out[1] = VGND;
@@ -47,7 +51,11 @@ module tt_um_tatzelreference (
   assign uio_oe[6] = VGND;
   assign uio_oe[7] = VGND;
 
-  assign ua[0] = VAPWR;
-  assign ua[1] = VDPWR;
+  assign ua[0] = foo;
+  assign ua[1] = bar;
+  assign ua[2] = baz;
+  assign ua[3] = qux;
+  assign ua[4] = VDPWR;
+  assign ua[5] = VAPWR;
 
 endmodule
