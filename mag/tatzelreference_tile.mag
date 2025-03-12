@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1741732016
+timestamp 1741805501
 << isosubstrate >>
 rect 0 0 14536 22576
 << metal4 >>
@@ -10,10 +10,10 @@ rect 7821 0 7911 200
 rect 9753 0 9843 200
 rect 11685 0 11775 200
 rect 13617 0 13707 200
-use OgueyAebischerBias  OgueyAebischerBias_0
-timestamp 1741732016
+use reference  reverenz
+timestamp 1741805501
 transform 1 0 4533 0 1 3222
-box -533 -2222 946 446
+box -533 -2368 974 446
 << properties >>
 string FIXED_BBOX 0 0 14536 22576
 << end >>
