@@ -1,12 +1,12 @@
 magic
 tech sky130A
-timestamp 1741810884
+timestamp 1741812120
 use OgueyAebischerBias  OgueyAebischerBias_0
-timestamp 1741810884
+timestamp 1741811270
 transform 1 0 0 0 1 0
 box -177 -2368 974 446
 use ToBiasStartup  ToBiasStartup_0
-timestamp 1741810884
+timestamp 1741812120
 transform -1 0 -388 0 1 0
-box -367 -2042 145 446
+box -367 -2042 241 446
 << end >>
