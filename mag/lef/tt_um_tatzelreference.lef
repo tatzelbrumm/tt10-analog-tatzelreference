@@ -1,0 +1,20 @@
+MACRO tatzelreference_tile
+  CLASS BLOCK ;
+  FOREIGN tatzelreference_tile ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 145.360 BY 225.760 ;
+  OBS
+      LAYER nwell ;
+        RECT 40.000 34.220 54.790 36.680 ;
+      LAYER li1 ;
+        RECT 40.290 8.850 55.050 36.460 ;
+      LAYER met1 ;
+        RECT 40.310 8.540 54.790 36.500 ;
+      LAYER met2 ;
+        RECT 40.000 30.800 54.790 36.350 ;
+      LAYER met4 ;
+        RECT 39.570 0.000 137.070 2.000 ;
+  END
+END tatzelreference_tile
+END LIBRARY
+
