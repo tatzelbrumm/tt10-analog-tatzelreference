@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1741730373
+timestamp 1741810884
 << nwell >>
 rect -367 200 145 446
 << psubdiff >>
@@ -130,6 +130,14 @@ use flatpmos1x0.3  flatpmos1x0.3_0
 timestamp 1740761609
 transform 1 0 -286 0 1 302
 box -81 -62 81 62
+use nmos_8x2  nmos_8x2_0
+timestamp 1741810117
+transform -1 0 145 0 1 -2042
+box 0 0 258 857
+use nmos_8x2  nmos_8x2_1
+timestamp 1741810117
+transform -1 0 145 0 1 -1142
+box 0 0 258 857
 use shortnmos_2x  shortnmos_2x_0
 timestamp 1740761609
 transform 1 0 0 0 1 -21
