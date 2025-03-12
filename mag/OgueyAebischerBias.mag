@@ -1,12 +1,22 @@
 magic
 tech sky130A
-timestamp 1741745222
+timestamp 1741796374
+<< metal1 >>
+rect -144 -2263 -112 127
+rect 909 -2263 941 127
+<< metal2 >>
+rect -144 387 946 413
+rect -144 181 946 207
+rect -144 141 946 167
+rect -144 101 946 127
+rect -144 -102 946 -76
+rect -144 -142 946 -116
 use nmos_1x80_2x  nmos_1x80_2x_1
-timestamp 1741743348
+timestamp 1741796374
 transform 1 0 -140 0 -1 -233
-box 0 -77 1078 2135
+box -4393 -17453 10143 5123
 use OgueyAebischer_p7_n5  OgueyAebischer_p7_n5_0
-timestamp 1741324827
+timestamp 1741796374
 transform 1 0 0 0 1 0
 box -22 -142 946 446
 << end >>

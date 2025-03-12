@@ -1,6 +1,12 @@
 magic
 tech sky130A
-timestamp 1741743348
+timestamp 1741796374
+<< psubdiff >>
+rect -79 2085 1473 2106
+rect -79 -49 1473 -28
+<< locali >>
+rect -79 2087 1473 2104
+rect -79 -47 1473 -30
 << metal1 >>
 rect 44 2109 47 2135
 rect 141 2109 144 2135
@@ -26,6 +32,8 @@ rect 806 2069 809 2095
 rect 903 2069 906 2095
 rect 806 2032 906 2069
 rect 933 2032 1033 2109
+rect -4 28 28 2030
+rect 1049 28 1081 2030
 rect 298 -51 398 26
 rect 425 -11 525 26
 rect 425 -37 428 -11
@@ -71,7 +79,7 @@ rect 298 -77 301 -51
 rect 395 -77 682 -51
 rect 776 -77 779 -51
 use nmos1x20_8x  nmos1x20_8x_0
-timestamp 1740761609
+timestamp 1741796374
 transform 1 0 475 0 1 1029
 box -475 -1029 603 1029
 << end >>
