@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1741830316
+timestamp 1741831037
 << nwell >>
 rect -177 200 974 446
 << viali >>
@@ -63,10 +63,16 @@ timestamp 1741829460
 transform 1 0 0 0 1 0
 box -22 -142 946 446
 << labels >>
-rlabel metal2 -177 -142 -151 -116 1 vss
-rlabel metal2 -177 387 -151 413 1 vdd
-rlabel metal2 -177 181 -151 207 1 vbp
-rlabel metal2 -176 141 -150 167 1 vbn
-rlabel metal2 -177 101 -151 127 1 vbr
-rlabel metal2 -177 -102 -151 -76 1 vres
+flabel metal2 -177 -142 -151 -116 0 FreeSans 160 0 0 0 vss
+port 0 ew
+flabel metal2 -177 387 -151 413 0 FreeSans 160 0 0 0 vdd
+port 1 ew
+flabel metal2 -177 181 -151 207 0 FreeSans 160 0 0 0 vbp
+port 2 ew
+flabel metal2 -176 141 -150 167 0 FreeSans 160 0 0 0 vbn
+port 3 ew
+flabel metal2 -177 101 -151 127 0 FreeSans 160 0 0 0 vbr
+port 4 ew
+flabel metal2 -177 -102 -151 -76 0 FreeSans 160 0 0 0 vres
+port 5 ew
 << end >>
