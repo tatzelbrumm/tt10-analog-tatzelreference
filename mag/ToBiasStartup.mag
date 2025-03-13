@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1741827447
+timestamp 1741828063
 << nwell >>
 rect -367 200 241 446
 << psubdiff >>
@@ -102,6 +102,7 @@ rect 110 407 198 424
 rect -212 292 -186 312
 rect -74 292 -48 312
 rect -120 -31 -94 -11
+rect -13 -203 65 -186
 << metal1 >>
 rect -336 424 -236 428
 rect -336 413 -330 424
@@ -160,6 +161,10 @@ rect 73 -142 76 -116
 rect 104 -116 204 -39
 rect 104 -142 107 -116
 rect 201 -142 204 -116
+rect -24 -186 76 -142
+rect -24 -203 -13 -186
+rect 65 -203 76 -186
+rect -24 -206 76 -203
 rect -123 -288 147 -265
 rect -123 -1042 -91 -288
 rect -123 -1065 147 -1042
@@ -204,29 +209,29 @@ rect -367 141 176 167
 rect 202 141 235 167
 rect -367 101 48 127
 rect 74 101 235 127
-rect -367 61 -120 87
+rect -123 61 -120 87
 rect -94 61 235 87
 rect -367 -142 -21 -116
 rect 73 -142 107 -116
 rect 201 -142 235 -116
 use flatpmos1x0.3  flatpmos1x0.3_0
-timestamp 1741827447
+timestamp 1741828063
 transform 1 0 -286 0 1 302
 box -81 -62 81 62
 use nmos_8x2  nmos_8x2_0
-timestamp 1741827447
+timestamp 1741828063
 transform -1 0 150 0 1 -1986
 box 0 0 258 857
 use nmos_8x2  nmos_8x2_1
-timestamp 1741827447
+timestamp 1741828063
 transform -1 0 150 0 1 -1078
 box 0 0 258 857
 use shortnmos_2x  shortnmos_2x_0
-timestamp 1741827447
+timestamp 1741828063
 transform 1 0 90 0 1 -21
 box -127 -44 127 44
 use shortpmos_2x  shortpmos_2x_0
-timestamp 1741827447
+timestamp 1741828063
 transform 1 0 90 0 1 302
 box -145 -62 145 62
 << end >>
