@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1741833302
+timestamp 1741833387
 use OgueyAebischerBias  OgueyAebischerBias_0
 timestamp 1741832991
 transform 1 0 0 0 1 0
@@ -10,10 +10,16 @@ timestamp 1741832991
 transform -1 0 -406 0 1 0
 box -367 -2021 235 446
 << labels >>
-rlabel space -641 -142 -614 -116 1 vss
-rlabel space -641 387 -614 413 1 vdd
-rlabel space -641 181 -614 207 1 vbp
-rlabel space -641 141 -614 167 1 vbn
-rlabel space -641 101 -614 127 1 vbr
-rlabel space -641 61 -614 87 1 disable
+flabel metal2 -641 -142 -614 -116 0 FreeSans 160 0 0 0 vss
+port 0 ew
+flabel metal2 -641 387 -614 413 0 FreeSans 160 0 0 0 vdd
+port 1 ew
+flabel metal2 -641 181 -614 207 0 FreeSans 160 0 0 0 vbp
+port 2 ew
+flabel metal2 -641 141 -614 167 0 FreeSans 160 0 0 0 vbn
+port 3 ew
+flabel metal2 -641 101 -614 127 0 FreeSans 160 0 0 0 vbr
+port 4 ew
+flabel metal2 -641 61 -614 87 0 FreeSans 160 0 0 0 disable
+port 5 ew
 << end >>
