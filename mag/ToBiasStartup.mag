@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1741832991
+timestamp 1741834765
 << nwell >>
 rect -367 200 235 446
 << psubdiff >>
@@ -102,6 +102,8 @@ rect 110 407 198 424
 rect -212 292 -186 312
 rect -74 292 -48 312
 rect -120 -31 -94 -11
+rect -14 -111 64 -94
+rect 116 -111 194 -94
 rect -13 -203 65 -186
 << metal1 >>
 rect -336 424 -236 428
@@ -155,10 +157,16 @@ rect 174 167 204 281
 rect 174 141 176 167
 rect 202 141 204 167
 rect 174 0 204 141
-rect -24 -116 76 -39
+rect -24 -94 76 -39
+rect -24 -111 -14 -94
+rect 64 -111 76 -94
+rect -24 -116 76 -111
 rect -24 -142 -21 -116
 rect 73 -142 76 -116
-rect 104 -116 204 -39
+rect 104 -94 204 -39
+rect 104 -111 116 -94
+rect 194 -111 204 -94
+rect 104 -116 204 -111
 rect 104 -142 107 -116
 rect 201 -142 204 -116
 rect -24 -186 76 -142
@@ -237,16 +245,16 @@ box -145 -62 145 62
 << labels >>
 flabel metal2 -367 -142 -340 -116 0 FreeSans 160 0 0 0 vss
 port 0 ew
-flabel metal2 -367 387 -340 413 0 FreeSans 160 0 0 0  vdd
+flabel metal2 -367 387 -340 413 0 FreeSans 160 0 0 0 vdd
 port 1 ew
-flabel metal2 -367 181 -340 207 0 FreeSans 160 0 0 0  vbp
+flabel metal2 -367 181 -340 207 0 FreeSans 160 0 0 0 vbp
 port 2 ew
-flabel metal2 -367 141 -340 167 0 FreeSans 160 0 0 0  vbn
+flabel metal2 -367 141 -340 167 0 FreeSans 160 0 0 0 vbn
 port 3 ew
-flabel metal2 -367 101 -340 127 0 FreeSans 160 0 0 0  vbr
+flabel metal2 -367 101 -340 127 0 FreeSans 160 0 0 0 vbr
 port 4 ew
-flabel metal2 208 61 235 87 0 FreeSans 160 0 0 0  disable
+flabel metal2 208 61 235 87 0 FreeSans 160 0 0 0 disable
 port 5 e
-flabel metal2 -268 221 -241 247 0 FreeSans 160 0 0 0  vkick
+flabel metal2 -268 221 -241 247 0 FreeSans 160 0 0 0 vkick
 port 6 nsew
 << end >>
