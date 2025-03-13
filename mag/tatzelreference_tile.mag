@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1741833839
+timestamp 1741834765
 << isosubstrate >>
 rect 0 0 29072 45152
 << metal4 >>
@@ -12,7 +12,7 @@ rect 19506 0 19686 400
 rect 23370 0 23550 400
 rect 27234 0 27414 400
 use reference  reverenz
-timestamp 1741833387
+timestamp 1741834765
 transform 1 0 9066 0 1 6444
 box -1341 -4736 1948 892
 << properties >>
