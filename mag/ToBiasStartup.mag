@@ -1,8 +1,8 @@
 magic
 tech sky130A
-timestamp 1741831803
+timestamp 1741832991
 << nwell >>
-rect -367 200 241 446
+rect -367 200 235 446
 << psubdiff >>
 rect -26 -94 206 -92
 rect -26 -111 -14 -94
@@ -215,31 +215,38 @@ rect -367 -142 -21 -116
 rect 73 -142 107 -116
 rect 201 -142 235 -116
 use flatpmos1x0.3  flatpmos1x0.3_0
-timestamp 1741828063
+timestamp 1740761609
 transform 1 0 -286 0 1 302
 box -81 -62 81 62
 use nmos_8x2  nmos_8x2_0
-timestamp 1741828063
+timestamp 1741810117
 transform -1 0 150 0 1 -1986
 box 0 0 258 857
 use nmos_8x2  nmos_8x2_1
-timestamp 1741828063
+timestamp 1741810117
 transform -1 0 150 0 1 -1078
 box 0 0 258 857
 use shortnmos_2x  shortnmos_2x_0
-timestamp 1741828063
+timestamp 1740761609
 transform 1 0 90 0 1 -21
 box -127 -44 127 44
 use shortpmos_2x  shortpmos_2x_0
-timestamp 1741828063
+timestamp 1741318042
 transform 1 0 90 0 1 302
 box -145 -62 145 62
 << labels >>
-rlabel metal2 -367 -142 -340 -116 1 vss
-rlabel metal2 -367 387 -340 413 1 vdd
-rlabel metal2 -367 181 -340 207 1 vbp
-rlabel metal2 -367 141 -340 167 1 vbn
-rlabel metal2 -367 101 -340 127 1 vbr
-rlabel metal2 208 61 235 87 1 disable
-rlabel metal2 -268 221 -241 247 1 vkick
+flabel metal2 -367 -142 -340 -116 0 FreeSans 160 0 0 0 vss
+port 0 ew
+flabel metal2 -367 387 -340 413 0 FreeSans 160 0 0 0  vdd
+port 1 ew
+flabel metal2 -367 181 -340 207 0 FreeSans 160 0 0 0  vbp
+port 2 ew
+flabel metal2 -367 141 -340 167 0 FreeSans 160 0 0 0  vbn
+port 3 ew
+flabel metal2 -367 101 -340 127 0 FreeSans 160 0 0 0  vbr
+port 4 ew
+flabel metal2 208 61 235 87 0 FreeSans 160 0 0 0  disable
+port 5 e
+flabel metal2 -268 221 -241 247 0 FreeSans 160 0 0 0  vkick
+port 6 nsew
 << end >>
