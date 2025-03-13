@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1741828063
+timestamp 1741831803
 << nwell >>
 rect -367 200 241 446
 << psubdiff >>
@@ -234,4 +234,12 @@ use shortpmos_2x  shortpmos_2x_0
 timestamp 1741828063
 transform 1 0 90 0 1 302
 box -145 -62 145 62
+<< labels >>
+rlabel metal2 -367 -142 -340 -116 1 vss
+rlabel metal2 -367 387 -340 413 1 vdd
+rlabel metal2 -367 181 -340 207 1 vbp
+rlabel metal2 -367 141 -340 167 1 vbn
+rlabel metal2 -367 101 -340 127 1 vbr
+rlabel metal2 208 61 235 87 1 disable
+rlabel metal2 -268 221 -241 247 1 vkick
 << end >>
