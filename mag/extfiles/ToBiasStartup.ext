@@ -1,0 +1,125 @@
+timestamp 1741834765
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use shortpmos_2x shortpmos_2x_0 1 0 180 0 1 604
+use shortnmos_2x shortnmos_2x_0 1 0 180 0 1 -42
+use nmos_8x2 nmos_8x2_1 -1 0 300 0 1 -2156
+use nmos_8x2 nmos_8x2_0 -1 0 300 0 1 -3972
+use flatpmos1x0.3 flatpmos1x0.3_0 1 0 -572 0 1 604
+port "vbn" 3 -734 282 -680 334 m2
+port "vbr" 4 -734 202 -680 254 m2
+port "disable" 5 416 122 470 174 m2
+port "vkick" 6 -536 442 -482 494 m2
+port "vbp" 2 -734 362 -680 414 m2
+port "vdd" 1 -734 774 -680 826 m2
+port "vss" 0 -734 -284 -680 -232 m2
+node "vbn" 4 225.772 -734 282 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33720 1244 62608 2512 0 0 0 0 0 0 0 0
+node "vbr" 4 213.866 -734 202 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33720 1244 62608 2512 0 0 0 0 0 0 0 0
+node "li_n206_n3950#" 42 1951.94 -206 -3950 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 791136 4200 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n204_n2134#" 42 1970.63 -204 -2134 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 791136 4200 0 0 0 0 0 0 0 0 0 0 0 0
+node "disable" 193 869.893 416 122 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 536 0 0 3744 248 191248 6640 37232 1536 0 0 0 0 0 0 0 0
+node "vkick" 115 437.847 -536 442 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6960 352 0 0 3744 248 80640 2776 23192 996 0 0 0 0 0 0 0 0
+node "vbp" 126 1672.83 -734 362 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6960 352 0 0 3744 248 345504 11564 62608 2512 0 0 0 0 0 0 0 0
+node "vdd" 5333 3068.11 -734 774 m2 0 0 0 0 592368 3392 0 0 56600 2364 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22848 1480 356912 9940 62608 2512 0 0 0 0 0 0 0 0
+substrate "vss" 0 0 -734 -284 m2 0 0 0 0 0 0 0 0 0 0 406728 19368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 329528 19384 108000 1880 62608 2512 0 0 0 0 0 0 0 0
+cap "vkick" "vdd" 448.094
+cap "disable" "li_n206_n3950#" 0.0595601
+cap "vkick" "vbn" 39.1408
+cap "vbr" "disable" 455.979
+cap "vdd" "li_n206_n3950#" 22.6681
+cap "vbr" "vdd" 95.3122
+cap "li_n204_n2134#" "disable" 983.143
+cap "vbr" "vbn" 858.058
+cap "vbp" "disable" 13.2169
+cap "li_n204_n2134#" "vdd" 1.68483
+cap "vbp" "vdd" 2293.65
+cap "vbp" "vbn" 762.968
+cap "vbr" "vkick" 146.307
+cap "vkick" "li_n204_n2134#" 4.95533
+cap "disable" "vdd" 1432.51
+cap "vkick" "vbp" 405.424
+cap "disable" "vbn" 44.3761
+cap "vbp" "li_n206_n3950#" 983.128
+cap "vdd" "vbn" 76.3215
+cap "vbr" "vbp" 96.9751
+cap "vbp" "li_n204_n2134#" 0.0620418
+cap "vkick" "disable" 480.68
+cap "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" "vss" 9.30711
+cap "vss" "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" 55.0476
+cap "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" 840.774
+cap "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" 0.00248167
+cap "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" 69.5531
+cap "shortnmos_2x_0/a_n228_n88#" "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" 149.683
+cap "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" 577.903
+cap "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" 0.216731
+cap "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" "shortnmos_2x_0/a_n228_n88#" 30.1235
+cap "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" "shortnmos_2x_0/a_n228_n88#" -58.3009
+cap "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" "shortnmos_2x_0/a_n228_n88#" 9.30711
+cap "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" 2.0973
+cap "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" 365.24
+cap "flatpmos1x0.3_0/a_n126_n30#" "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" 0.120699
+cap "shortnmos_2x_0/a_n228_n88#" "flatpmos1x0.3_0/a_n100_n88#" 287.124
+cap "shortnmos_2x_0/a_n228_n88#" "flatpmos1x0.3_0/a_n100_30#" -19.4598
+cap "shortnmos_2x_0/a_28_30#" "flatpmos1x0.3_0/a_n100_n88#" 0.503377
+cap "flatpmos1x0.3_0/a_n100_30#" "shortnmos_2x_0/a_28_30#" 3.04057
+cap "shortnmos_2x_0/a_n228_n88#" "shortnmos_2x_0/a_n228_30#" -22.7931
+cap "shortnmos_2x_0/a_28_30#" "shortnmos_2x_0/a_n228_30#" -3.3675
+cap "flatpmos1x0.3_0/a_n100_n88#" "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" 842.09
+cap "flatpmos1x0.3_0/a_n126_n30#" "flatpmos1x0.3_0/a_n100_n88#" 0.812728
+cap "flatpmos1x0.3_0/a_n100_30#" "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" -1.38629
+cap "shortnmos_2x_0/a_n228_30#" "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" 13.5471
+cap "flatpmos1x0.3_0/a_n126_n30#" "shortnmos_2x_0/a_n228_30#" 0.926088
+cap "shortnmos_2x_0/a_n228_n88#" "shortnmos_2x_0/a_28_30#" -22.136
+cap "flatpmos1x0.3_0/a_n100_30#" "flatpmos1x0.3_0/a_n100_n88#" 3.15812
+cap "shortnmos_2x_0/a_n228_n88#" "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" -106.167
+cap "shortnmos_2x_0/a_n228_n88#" "flatpmos1x0.3_0/a_n126_n30#" -0.535016
+cap "shortnmos_2x_0/a_n228_30#" "flatpmos1x0.3_0/a_n100_n88#" 18.5303
+cap "shortnmos_2x_0/a_28_30#" "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" 12.6409
+cap "shortnmos_2x_0/a_28_30#" "flatpmos1x0.3_0/a_n126_n30#" 0.759645
+cap "flatpmos1x0.3_0/a_n100_30#" "shortnmos_2x_0/a_n228_30#" 3.33571
+cap "shortnmos_2x_0/a_n228_30#" "shortnmos_2x_0/a_28_30#" -3.9932
+cap "flatpmos1x0.3_0/a_n100_30#" "shortnmos_2x_0/a_28_30#" -25.4929
+cap "flatpmos1x0.3_0/a_n126_n30#" "shortnmos_2x_0/a_n228_n88#" 0.0228587
+cap "flatpmos1x0.3_0/a_n126_n30#" "flatpmos1x0.3_0/a_n100_n88#" 19.8859
+cap "shortnmos_2x_0/a_n254_n30#" "shortnmos_2x_0/a_28_30#" 0.665205
+cap "shortnmos_2x_0/a_n228_n88#" "flatpmos1x0.3_0/a_n100_30#" -11.6231
+cap "flatpmos1x0.3_0/a_n100_n88#" "shortnmos_2x_0/a_n228_30#" 20.967
+cap "flatpmos1x0.3_0/a_n100_n88#" "flatpmos1x0.3_0/a_n100_30#" -52.4868
+cap "flatpmos1x0.3_0/a_n126_n30#" "shortnmos_2x_0/a_n228_30#" 9.46442
+cap "flatpmos1x0.3_0/a_n126_n30#" "flatpmos1x0.3_0/a_n100_30#" -45.6421
+cap "shortnmos_2x_0/a_n254_n30#" "flatpmos1x0.3_0/a_n100_n88#" 1.29735
+cap "shortnmos_2x_0/a_n228_30#" "flatpmos1x0.3_0/a_n100_30#" -22.8076
+cap "flatpmos1x0.3_0/a_n100_n88#" "shortnmos_2x_0/a_28_30#" 2.48548
+cap "shortnmos_2x_0/a_n254_n30#" "flatpmos1x0.3_0/a_n100_30#" -1.08487
+cap "shortnmos_2x_0/a_n254_n30#" "shortnmos_2x_0/a_n228_30#" 0.665205
+cap "flatpmos1x0.3_0/a_n126_n30#" "shortnmos_2x_0/a_28_30#" 9.31209
+cap "shortnmos_2x_0/a_n228_n88#" "flatpmos1x0.3_0/a_n100_n88#" 0.176683
+merge "flatpmos1x0.3_0/VSUBS" "shortpmos_2x_0/VSUBS" -1315.21 0 0 0 0 0 0 0 0 0 0 -143808 -6848 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -116416 -6848 -18400 -984 0 0 0 0 0 0 0 0 0 0
+merge "shortpmos_2x_0/VSUBS" "shortnmos_2x_0/VSUBS"
+merge "shortnmos_2x_0/VSUBS" "shortnmos_2x_0/a_n228_n88#"
+merge "shortnmos_2x_0/a_n228_n88#" "nmos_8x2_0/VSUBS"
+merge "nmos_8x2_0/VSUBS" "nmos_8x2_1/VSUBS"
+merge "nmos_8x2_1/VSUBS" "vss"
+merge "shortnmos_2x_0/a_n254_n30#" "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" -2460.69 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1560 -172 0 0 -109344 -6568 -50688 -3696 0 0 0 0 0 0 0 0 0 0
+merge "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" "disable"
+merge "disable" "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_200_n831#"
+merge "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_200_n831#" "li_n204_n2134#"
+merge "shortpmos_2x_0/a_28_n88#" "shortnmos_2x_0/a_28_30#" -111.704 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4800 -400 0 0 0 0 0 0 0 0 0 0
+merge "shortnmos_2x_0/a_28_30#" "vbn"
+merge "flatpmos1x0.3_0/a_n126_n30#" "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" -2386.26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1560 -172 0 0 -106128 -6564 -50688 -3696 0 0 0 0 0 0 0 0 0 0
+merge "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" "vbp"
+merge "vbp" "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_200_n831#"
+merge "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_200_n831#" "li_n206_n3950#"
+merge "flatpmos1x0.3_0/a_n100_n88#" "shortpmos_2x_0/a_n254_n30#" -401.055 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1560 -172 0 0 0 0 -5888 -440 0 0 0 0 0 0 0 0 0 0
+merge "shortpmos_2x_0/a_n254_n30#" "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#"
+merge "nmos_8x2_1/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" "vkick"
+merge "flatpmos1x0.3_0/a_n100_30#" "flatpmos1x0.3_0/w_n162_n124#" -1446.3 0 0 0 0 -224192 -2800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45632 -2352 0 0 0 0 0 0 0 0 0 0
+merge "flatpmos1x0.3_0/w_n162_n124#" "shortpmos_2x_0/a_n228_30#"
+merge "shortpmos_2x_0/a_n228_30#" "shortpmos_2x_0/w_n290_n124#"
+merge "shortpmos_2x_0/w_n290_n124#" "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#"
+merge "nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" "vdd"
+merge "shortpmos_2x_0/a_n228_n88#" "shortnmos_2x_0/a_n228_30#" -121.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4800 -400 0 0 0 0 0 0 0 0 0 0
+merge "shortnmos_2x_0/a_n228_30#" "vbr"
