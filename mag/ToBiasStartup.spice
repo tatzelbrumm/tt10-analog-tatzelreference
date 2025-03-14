@@ -26,7 +26,7 @@ X0 a_n100_30# a_n126_n30# a_n100_n88# w_n162_n124# sky130_fd_pr__pfet_01v8 ad=0.
 
 .subckt ToBiasStartup vss vdd vbp vbn vbr disable vkick
 Xshortpmos_2x_0 vkick vbr vdd vbn vdd shortpmos_2x
-Xnmos_8x2_0 vbp vdd vbp vss nmos_8x2
+Xnmos_8x2_0 vdd vbp vdd vss nmos_8x2
 Xnmos_8x2_1 disable vkick disable vss nmos_8x2
 Xshortnmos_2x_0 disable vss vbn vbr vss shortnmos_2x
 Xflatpmos1x0.3_0 vdd vkick vbp vdd flatpmos1x0.3
