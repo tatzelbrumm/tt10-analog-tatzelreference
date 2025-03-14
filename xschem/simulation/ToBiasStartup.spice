@@ -1,5 +1,5 @@
 ** sch_path: /home/cmaier/EDA/TinyTapeout/designs/tt10-analog-tatzelreference/xschem/ToBiasStartup.sch
-**.subckt ToBiasStartup vdd vbp vbn disable vbr vss
+.subckt ToBiasStartup vdd vbp vbn disable vbr vss
 *.iopin vss
 *.iopin vdd
 *.iopin vbp
@@ -20,5 +20,5 @@ XM20 disable vkick disable vss sky130_fd_pr__nfet_01v8 L=4 W=4 nf=1 ad='int((nf+
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM26 vdd vbp vdd vss sky130_fd_pr__nfet_01v8 L=4 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-**.ends
+.ends
 .end
