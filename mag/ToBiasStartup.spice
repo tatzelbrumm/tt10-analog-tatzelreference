@@ -24,11 +24,11 @@ X1 a_28_30# a_n254_n30# a_n228_n88# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.5
 X0 a_n100_30# a_n126_n30# a_n100_n88# w_n162_n124# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
 .ends
 
-.subckt ToBiasStartup vss vdd vbp vbn vbr disable vkick
-Xshortpmos_2x_0 vkick vbr vdd vbn vdd shortpmos_2x
+.subckt ToBiasStartup vss vdd vbp vbn vbr disable
+Xshortpmos_2x_0 a_n164_574# vbr vdd vbn vdd shortpmos_2x
 Xnmos_8x2_0 vdd vbp vdd vss nmos_8x2
-Xnmos_8x2_1 disable vkick disable vss nmos_8x2
+Xnmos_8x2_1 disable a_n164_574# disable vss nmos_8x2
 Xshortnmos_2x_0 disable vss vbn vbr vss shortnmos_2x
-Xflatpmos1x0.3_0 vdd vkick vbp vdd flatpmos1x0.3
+Xflatpmos1x0.3_0 vdd a_n164_574# vbp vdd flatpmos1x0.3
 .ends
 
