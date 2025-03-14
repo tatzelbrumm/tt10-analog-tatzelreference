@@ -48,7 +48,7 @@ sky130_fd_pr__pfet_01v8 (7->3)             |sky130_fd_pr__pfet_01v8 (7->3)
 Number of devices: 13                      |Number of devices: 13                      
 Number of nets: 12                         |Number of nets: 12                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: OgueyAebischerBias              |Circuit 2: OgueyAebischerBias              
@@ -58,9 +58,9 @@ vdd                                        |vdd
 vbp                                        |vbp                                        
 vss                                        |vss                                        
 vbn                                        |vbn                                        
-(no matching pin)                          |vres                                       
 ---------------------------------------------------------------------------------------
-Cell pin lists for OgueyAebischerBias and OgueyAebischerBias altered to match.
+Cell pin lists are equivalent.
 Device classes OgueyAebischerBias and OgueyAebischerBias are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.
