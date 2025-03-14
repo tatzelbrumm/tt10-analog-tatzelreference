@@ -22,12 +22,12 @@ X6 a_662_100# a_n960_n100# a_662_n158# w_n924_n194# sky130_fd_pr__pfet_01v8 ad=0
 .ends
 
 .subckt OgueyAebischer_p7_n5 w_n44_400# pmos_7x_0/VSUBS m1_62_202# m1_220_n74# m1_n44_362#
-+ m1_62_700# m1_452_n204#
++ m1_452_n204#
 Xnmos_5x_1 m1_n44_362# m1_452_n204# m1_220_n74# pmos_7x_0/VSUBS m1_n44_362# m1_n44_362#
 + m1_452_n204# m1_452_n204# m1_452_n204# m1_220_n74# m1_n44_362# pmos_7x_0/VSUBS nmos_5x
-Xpmos_7x_0 m1_62_700# m1_62_700# m1_220_n74# m1_62_202# w_n44_400# m1_n44_362# m1_n44_362#
-+ m1_62_700# m1_62_700# m1_62_700# m1_220_n74# m1_220_n74# m1_62_202# m1_220_n74#
-+ m1_62_700# m1_62_700# pmos_7x
+Xpmos_7x_0 w_n44_400# w_n44_400# m1_220_n74# m1_62_202# w_n44_400# m1_n44_362# m1_n44_362#
++ w_n44_400# w_n44_400# w_n44_400# m1_220_n74# m1_220_n74# m1_62_202# m1_220_n74#
++ w_n44_400# w_n44_400# pmos_7x
 .ends
 
 .subckt nmos1x20_8x a_n354_2000# a_n862_2000# a_n100_2000# a_n950_n2000# a_408_n2058#
@@ -52,7 +52,7 @@ Xnmos1x20_8x_0 m1_342_4064# m1_88_4064# m1_88_4064# m1_n8_56# m1_596_n154# m1_13
 .ends
 
 .subckt OgueyAebischerBias vss vdd vbp vbn vbr vres
-XOgueyAebischer_p7_n5_0 w_n354_400# vss vbr vbn vbp vdd vres OgueyAebischer_p7_n5
+XOgueyAebischer_p7_n5_0 vdd vss vbr vbn vbp vres OgueyAebischer_p7_n5
 Xnmos_1x80_2x_1 vss vss vss vbr vres vbr nmos_1x80_2x
 .ends
 
