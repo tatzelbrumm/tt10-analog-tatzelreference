@@ -51,8 +51,8 @@ Xnmos1x20_8x_0 m1_342_4064# m1_88_4064# m1_88_4064# m1_n8_56# m1_596_n154# m1_13
 + nmos1x20_8x_0/a_n862_n2058# nmos1x20_8x_0/VSUBS nmos1x20_8x
 .ends
 
-.subckt OgueyAebischerBias vss vdd vbp vbn vbr vres
-XOgueyAebischer_p7_n5_0 vdd vss vbr vbn vbp vres OgueyAebischer_p7_n5
-Xnmos_1x80_2x_1 vss vss vss vbr vres vbr nmos_1x80_2x
+.subckt OgueyAebischerBias vss vdd vbp vbn vbr
+XOgueyAebischer_p7_n5_0 vdd vss vbr vbn vbp m1_62_n518# OgueyAebischer_p7_n5
+Xnmos_1x80_2x_1 vss vss vss vbr m1_62_n518# vbr nmos_1x80_2x
 .ends
 
