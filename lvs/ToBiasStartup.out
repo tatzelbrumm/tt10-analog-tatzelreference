@@ -44,13 +44,7 @@ Number of nets: 7                          |Number of nets: 7
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely with property errors.
-sky130_fd_pr__nfet_01v8:M26 vs. nmos_8x2_0//sky130_fd_pr__nfet_01v8_BDGNGK_0/sky130_fd_pr__nfet_01v8:0:
- W circuit1: 4   circuit2: 8   (delta=66.7%, cutoff=1%)
- L circuit1: 4   circuit2: 2   (delta=66.7%, cutoff=1%)
-sky130_fd_pr__nfet_01v8:M20 vs. nmos_8x2_1//sky130_fd_pr__nfet_01v8_BDGNGK_0/sky130_fd_pr__nfet_01v8:0:
- W circuit1: 4   circuit2: 8   (delta=66.7%, cutoff=1%)
- L circuit1: 4   circuit2: 2   (delta=66.7%, cutoff=1%)
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: ToBiasStartup                   |Circuit 2: ToBiasStartup                   
@@ -66,7 +60,4 @@ Cell pin lists are equivalent.
 Device classes ToBiasStartup and ToBiasStartup are equivalent.
 
 Final result: Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- ToBiasStartup
+.
