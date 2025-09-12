@@ -1,0 +1,78 @@
+timestamp 1741834765
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use reference reverenz 1 0 9066 0 1 6444
+node "m4_27234_0#" 0 106.078 27234 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1160 0 0 0 0
+node "m4_23370_0#" 0 106.078 23370 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1160 0 0 0 0
+node "m4_19506_0#" 0 106.078 19506 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1160 0 0 0 0
+node "m4_15642_0#" 0 106.078 15642 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1160 0 0 0 0
+node "m4_11778_0#" 0 106.078 11778 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1160 0 0 0 0
+node "m4_7914_0#" 0 106.078 7914 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 1160 0 0 0 0
+node "dw_0_0#" 4400 0 0 0 isosub 1311069784 155892 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m4_23370_0#" "dw_0_0#" 121.822
+cap "m4_27234_0#" "dw_0_0#" 121.822
+cap "m4_7914_0#" "dw_0_0#" 121.822
+cap "m4_19506_0#" "dw_0_0#" 121.822
+cap "m4_15642_0#" "dw_0_0#" 121.822
+cap "m4_11778_0#" "dw_0_0#" 121.822
+cap "reverenz/ToBiasStartup_0/nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" "dw_0_0#" 120.532
+cap "reverenz/ToBiasStartup_0/nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" "dw_0_0#" 136.887
+cap "dw_0_0#" "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n862_2000#" 251.264
+cap "dw_0_0#" "reverenz/ToBiasStartup_0/nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" 10.0757
+cap "dw_0_0#" "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n608_2000#" 28.6126
+cap "dw_0_0#" "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n950_n2000#" 1004.79
+cap "dw_0_0#" "reverenz/ToBiasStartup_0/nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" 47.7639
+cap "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_408_2000#" "dw_0_0#" 28.6126
+cap "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n862_2000#" "dw_0_0#" 12.9534
+cap "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n950_n2000#" "dw_0_0#" 1185.65
+cap "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_154_2000#" "dw_0_0#" 264.217
+cap "reverenz/ToBiasStartup_0/nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" "dw_0_0#" 209.2
+cap "reverenz/ToBiasStartup_0/nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" "dw_0_0#" 187.065
+cap "reverenz/ToBiasStartup_0/nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" "dw_0_0#" 176.244
+cap "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n950_n2000#" "dw_0_0#" 1378.25
+cap "dw_0_0#" "reverenz/ToBiasStartup_0/nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n200_n857#" 43.3587
+cap "dw_0_0#" "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n950_n2000#" 1736.14
+cap "reverenz/vss" "reverenz/ToBiasStartup_0/shortpmos_2x_0/a_n254_n30#" 89.9956
+cap "reverenz/disable" "reverenz/vss" 218.367
+cap "reverenz/vss" "reverenz/ToBiasStartup_0/shortpmos_2x_0/a_n254_n30#" 8.62548
+cap "reverenz/vss" "reverenz/ToBiasStartup_0/nmos_8x2_0/sky130_fd_pr__nfet_01v8_BDGNGK_0/a_n258_n831#" 94.5065
+cap "reverenz/vss" "reverenz/vbp" 58.1173
+cap "reverenz/disable" "reverenz/vss" 39.8384
+cap "reverenz/vss" "reverenz/vbr" 1331.93
+cap "reverenz/ToBiasStartup_0/vss" "reverenz/ToBiasStartup_0/vbr" 1736.14
+cap "reverenz/vbp" "reverenz/vss" 17.5777
+cap "reverenz/disable" "reverenz/vss" 218.29
+cap "reverenz/vbn" "reverenz/vss" 193.993
+cap "reverenz/ToBiasStartup_0/shortpmos_2x_0/a_n254_n30#" "reverenz/vss" 295.602
+cap "reverenz/vbr" "reverenz/vss" 116.358
+cap "reverenz/vss" "reverenz/vdd" 105.142
+cap "reverenz/disable" "reverenz/vss" 167.952
+cap "reverenz/vbn" "reverenz/vss" 302.109
+cap "reverenz/ToBiasStartup_0/shortpmos_2x_0/a_n254_n30#" "reverenz/vss" 60.7019
+cap "reverenz/vbr" "reverenz/vss" 649.209
+cap "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n608_n2058#" "reverenz/vss" 121.255
+cap "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n354_n2058#" "reverenz/vss" 50.7861
+cap "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n100_n2058#" "reverenz/vss" 9.30879
+cap "reverenz/vbp" "reverenz/vss" 182.802
+cap "reverenz/ToBiasStartup_0/vss" "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n354_n2058#" 55.9403
+cap "reverenz/ToBiasStartup_0/vss" "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n608_n2058#" 87.3861
+cap "reverenz/ToBiasStartup_0/vbr" "reverenz/ToBiasStartup_0/vss" 763.082
+cap "reverenz/ToBiasStartup_0/vss" "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/nmos1x20_8x_0/a_n100_n2058#" 19.717
+cap "reverenz/ToBiasStartup_0/vbp" "reverenz/ToBiasStartup_0/vss" 214.518
+cap "reverenz/ToBiasStartup_0/vss" "reverenz/ToBiasStartup_0/vbn" 445.396
+cap "reverenz/vss" "reverenz/ToBiasStartup_0/shortpmos_2x_0/a_n254_n30#" 50.5517
+cap "reverenz/vbn" "reverenz/vss" 2.74653
+cap "reverenz/vdd" "reverenz/vss" 167.481
+cap "reverenz/vss" "reverenz/vbp" 70.7295
+cap "reverenz/vss" "reverenz/ToBiasStartup_0/shortpmos_2x_0/a_n254_n30#" 3.11357
+cap "reverenz/vss" "reverenz/vdd" 245.945
+cap "reverenz/ToBiasStartup_0/vdd" "reverenz/ToBiasStartup_0/vss" 273.98
+cap "reverenz/ToBiasStartup_0/vbp" "reverenz/ToBiasStartup_0/vss" 77.9379
+merge "reverenz/OgueyAebischerBias_0/OgueyAebischer_p7_n5_0/a_138_n226#" "reverenz/vss" -1041.47 -30116330 -26442 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "reverenz/vss" "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/a_n74_n98#"
+merge "reverenz/OgueyAebischerBias_0/nmos_1x80_2x_1/a_n74_n98#" "reverenz/ToBiasStartup_0/vss"
+merge "reverenz/ToBiasStartup_0/vss" "dw_0_0#"
