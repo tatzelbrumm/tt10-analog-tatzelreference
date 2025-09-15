@@ -58,4 +58,24 @@ module tt_um_tatzelreference (
   assign ua[4] = VDPWR;
   assign ua[5] = VAPWR;
 
+  reference ogueyref (
+    .vss(VGND),
+    .vdd(VDPWR),
+    .disable(ui_in[0]),
+    .vbp(foo),
+    .vbn(bar),
+    .vbr(baz)
+  );
+endmodule
+
+/* Oguey-Aebischer reference */
+(* blackbox *)
+module reference(
+    input wire vss;
+    input wire vdd;
+    input wire disable;
+    inout wire vbp;
+    inout wire vbn;
+    inout wire vbr;
+);
 endmodule
