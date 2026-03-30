@@ -106,13 +106,12 @@ def write_layers_module(out_dir, layer_lines):
         "    L = Layers()\n",
     ]
     for ll in layer_lines:
-        m = re.match(r'^\s*(L_\w+)\s*=\s*layout\.layer\((\d+),\s*(\d+)\)', ll)
+        # Verbatim emit — handles both numeric layout.layer(n, d)
+        # and named layout.layer(pya.LayerInfo(n, d, "name")) forms.
+        m = re.match(r'\s*(L_\w+)\s*=(.*)', ll.rstrip())
         if m:
-            var, gds_l, gds_d = m.group(1), m.group(2), m.group(3)
-            lines.append(
-                f"    L.{var} = layout.layer({gds_l}, {gds_d})"
-                f"  # TODO remap for IHP\n"
-            )
+            var, rhs = m.group(1), m.group(2)
+            lines.append(f"    L.{var} ={rhs}\n")
     lines.append("    return L\n")
     (out_dir / "layers.py").write_text("".join(lines))
     print(f"  wrote {out_dir}/layers.py")
