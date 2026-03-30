@@ -7,38 +7,46 @@ Usage
 -----
     python lyp2map.py <file.lyp> [output.map]
 
-If output.map is omitted the result is written to <stem>.map in the same
-directory as the input file.
+If output.map is omitted the result is written to <stem>.map alongside the input.
 
 LANGSEC DESIGN NOTES
 --------------------
 A .lyp file is KLayout's XML layer-properties format.  The grammar we care
-about is a strict subset:
+about is a strict subset of valid .lyp XML:
 
-    lyp          = <layer-properties> { properties-entry } </layer-properties>
+    lyp_file     = <layer-properties> { properties-entry } </layer-properties>
     properties-entry = <properties>
                          <source> layer_spec </source>
-                         <name>   string      </name>
-                         ...
+                         <n>   n_string   </n>
+                         { any-other-element }
                        </properties>
-    layer_spec   = UINT "/" UINT [ "@" index ]   |   "*/*"   |   "*"
+    layer_spec   = UINT "/" UINT [ "@" DIGIT+ ]
+    n_string     = segment { "." segment }
+    segment      = LETTER_OR_UNDERSCORE { LETTER_OR_DIGIT_OR_UNDERSCORE }
 
-We extract only <source> and <name> from each <properties> block.
-All other XML content is accepted but ignored (we do not need it).
+Only <source> and <n> are extracted; all other XML content is ignored.
 
-Rejection rules (closed-world):
-  - <source> values that are not numeric "layer/datatype" (e.g. wildcards
-    "*/*", named layers, or absent values) are skipped with a warning —
-    they carry no GDS layer identity.
-  - <name> values whose dot-separated segments are not all valid Python
-    identifiers are skipped with a warning — they would be unrepresentable
-    as variable names in the generated script.
-  - Duplicate (layer, datatype) entries are skipped (first wins, matching
-    KLayout's own precedence rule for duplicate layer specs in a .lyp).
+REJECTION RULES (closed-world, no silent mangling):
 
-The parser uses Python's stdlib xml.etree.ElementTree, which is a
-well-tested conformant XML parser.  We do NOT use regex on the raw XML
-text — that would be shotgun parsing.
+  1. Root element MUST be <layer-properties>.  Any other root is an error.
+     We do NOT fall back to searching children — that would silently accept
+     .lyt files and other XML documents.
+
+  2. <source> MUST match layer_spec exactly (anchored regex).
+     Wildcards, named layers, missing text -> SKIP WITH WARNING.
+
+  3. <n> MUST match n_string exactly (anchored regex).  Names containing
+     spaces, parens, slashes, or other non-identifier characters are REJECTED
+     WITH A WARNING.  We do NOT sanitize/mangle names: "nwell (60/0)" mangled
+     to "nwell_60_0" could silently collide with a different layer.
+     LangSec: reject malformed input; do not guess at its intent.
+
+  4. Layer and datatype must be in [0, 4095] (GDS 12-bit limit).
+
+  5. Duplicate (layer, datatype): first wins; subsequent emit a warning.
+
+The XML is parsed with stdlib xml.etree.ElementTree — a conformant parser.
+We do NOT regex the raw XML bytes (that would be shotgun parsing).
 
 Dependencies: none (pure stdlib).
 """
@@ -50,144 +58,135 @@ import xml.etree.ElementTree as ET
 
 
 # ---------------------------------------------------------------------------
-# Grammar for layer_spec values extracted from <source>
-# The format is "layer/datatype" optionally followed by "@n" (view index).
+# Grammar terminals
 # ---------------------------------------------------------------------------
-_SOURCE_RE = re.compile(r'^(\d+)/(\d+)(?:@\d+)?$')
-_UINT_MAX  = 4095
 
-# Grammar for names: dot-separated Python-identifier segments
-_SEG_RE    = re.compile(r'^[A-Za-z_][A-Za-z0-9_]*$')
+# layer_spec: "digits/digits" optionally followed by "@digits"
+_SOURCE_RE = re.compile(r'^(?P<layer>\d+)/(?P<datatype>\d+)(?:@\d+)?$')
 
+# n_string: one or more dot-separated Python-identifier segments
+_SEGMENT   = r'[A-Za-z_][A-Za-z0-9_]*'
+_NAME_RE   = re.compile(r'^' + _SEGMENT + r'(?:\.' + _SEGMENT + r')*$')
 
-def _valid_name(name: str) -> bool:
-    """Return True if name is one or more dot-separated identifier segments."""
-    if not name:
-        return False
-    return all(_SEG_RE.match(seg) for seg in name.split('.'))
+_UINT_MAX  = 4095   # GDS layer/datatype are 12-bit fields (Calma spec section 2.5)
 
 
-def _sanitize_name(name: str) -> str:
-    """
-    Make a name safe for our map format:
-      - strip leading/trailing whitespace
-      - replace internal whitespace runs with underscores
-      - replace slashes, colons, parens with underscores
-
-    This handles names like "nwell (60/0)" or "met1 drawing" that appear
-    in some PDK lyp files.  After sanitization the name must still pass
-    _valid_name(); if not, the entry is skipped.
-    """
-    name = name.strip()
-    name = re.sub(r'\s+', '_', name)
-    name = re.sub(r'[/:\\(){}[\]<>!@#$%^&*+=|,;?\'"` ]', '_', name)
-    # collapse multiple underscores
-    name = re.sub(r'_+', '_', name)
-    name = name.strip('_')
-    return name
-
+# ---------------------------------------------------------------------------
+# Parser
+# ---------------------------------------------------------------------------
 
 def parse_lyp(path: str) -> list:
     """
-    Parse a KLayout .lyp file and return a list of (layer, datatype, name)
-    triples, in document order.
+    Parse a KLayout .lyp file and return [(layer, datatype, name), ...].
 
-    Skips entries that have no numeric layer/datatype or no usable name.
-    Skips duplicate (layer, datatype) pairs (first occurrence wins).
+    Prints warnings to stderr for skipped entries.
+    Raises SystemExit on structural errors (bad XML, wrong root element).
     """
     try:
         tree = ET.parse(path)
     except ET.ParseError as e:
-        raise SystemExit(f"XML parse error in {path!r}: {e}") from e
+        raise SystemExit(f"ERROR: XML parse error in {path!r}: {e}") from e
 
     root = tree.getroot()
 
-    # The root may be <layer-properties> directly, or the file may wrap it.
-    # Handle both.
-    if root.tag == 'layer-properties':
-        entries_root = root
-    else:
-        entries_root = root.find('layer-properties')
-        if entries_root is None:
-            raise SystemExit(
-                f"{path!r}: no <layer-properties> element found — "
-                f"is this a valid KLayout .lyp file?"
-            )
+    # Rule 1: root MUST be <layer-properties>.
+    if root.tag != 'layer-properties':
+        raise SystemExit(
+            f"ERROR: {path!r}: root element is <{root.tag}>, "
+            f"expected <layer-properties>.  "
+            f"Is this a standalone .lyp file rather than a .lyt?"
+        )
 
     results = []
-    seen    = {}   # (layer, datatype) -> first name seen
+    seen    = {}   # (layer, datatype) -> name of first accepted entry
 
-    def process_properties(elem):
-        """Extract one layer entry from a <properties> element."""
-        source_el = elem.find('source')
-        name_el   = elem.find('name')
-
-        if source_el is None or not (source_el.text or '').strip():
-            return  # no source — skip silently
-        if name_el is None or not (name_el.text or '').strip():
-            return  # no name — skip silently
-
-        source_text = source_el.text.strip()
-        raw_name    = name_el.text.strip()
-
-        # Parse source — must be "layer/datatype[@n]"
-        m = _SOURCE_RE.match(source_text)
-        if not m:
-            # Wildcard, named layer, or other non-numeric spec — skip
-            return
-
-        layer    = int(m.group(1))
-        datatype = int(m.group(2))
-
-        if layer > _UINT_MAX or datatype > _UINT_MAX:
-            print(f"  warning: skipping {source_text!r} — value exceeds GDS maximum {_UINT_MAX}",
-                  file=sys.stderr)
-            return
-
-        # Sanitize and validate name
-        name = _sanitize_name(raw_name)
-        if not _valid_name(name):
-            print(f"  warning: skipping ({layer},{datatype}) — "
-                  f"name {raw_name!r} cannot be made into a valid identifier",
-                  file=sys.stderr)
-            return
-
-        key = (layer, datatype)
-        if key in seen:
-            # Duplicate — first wins, warn
-            print(f"  warning: duplicate ({layer},{datatype}): "
-                  f"keeping {seen[key]!r}, ignoring {name!r}",
-                  file=sys.stderr)
-            return
-
-        seen[key] = name
-        results.append((layer, datatype, name))
-
-    # Walk all <properties> elements, including those nested inside groups
-    for elem in entries_root.iter('properties'):
-        process_properties(elem)
+    for elem in root.iter('properties'):
+        _process(elem, results, seen)
 
     return results
 
+
+def _process(elem, results: list, seen: dict) -> None:
+    """Extract one (layer, datatype, name) triple from a <properties> element."""
+
+    source_el = elem.find('source')
+    name_el   = elem.find('name')
+
+    # Missing <source>: skip silently (group/header entries have none).
+    if source_el is None or not (source_el.text or '').strip():
+        return
+
+    source_text = source_el.text.strip()
+
+    # Rule 2: source must match layer_spec grammar.
+    m = _SOURCE_RE.match(source_text)
+    if not m:
+        print(f"  skip: source {source_text!r} — not a numeric layer/datatype",
+              file=sys.stderr)
+        return
+
+    layer    = int(m.group('layer'))
+    datatype = int(m.group('datatype'))
+
+    # Rule 4: range check.
+    if layer > _UINT_MAX:
+        print(f"  skip: layer {layer} exceeds GDS maximum {_UINT_MAX}", file=sys.stderr)
+        return
+    if datatype > _UINT_MAX:
+        print(f"  skip: datatype {datatype} on layer {layer} "
+              f"exceeds GDS maximum {_UINT_MAX}", file=sys.stderr)
+        return
+
+    # Missing <n>: skip with warning (no PDK name to emit).
+    if name_el is None or not (name_el.text or '').strip():
+        print(f"  skip: ({layer},{datatype}) has no <n> element", file=sys.stderr)
+        return
+
+    raw_name = name_el.text.strip()
+
+    # Rule 3: name must satisfy n_string grammar — reject, do not mangle.
+    if not _NAME_RE.match(raw_name):
+        print(f"  skip: ({layer},{datatype}) name {raw_name!r} "
+              f"does not match grammar (dot-separated identifiers only). "
+              f"Rename it in the .lyp file if you need this layer.",
+              file=sys.stderr)
+        return
+
+    key = (layer, datatype)
+
+    # Rule 5: duplicates — first wins.
+    if key in seen:
+        print(f"  skip: ({layer},{datatype}) duplicate — "
+              f"keeping {seen[key]!r}, ignoring {raw_name!r}", file=sys.stderr)
+        return
+
+    seen[key] = raw_name
+    results.append((layer, datatype, raw_name))
+
+
+# ---------------------------------------------------------------------------
+# Writer
+# ---------------------------------------------------------------------------
 
 def write_map(entries: list, out_path: str, source_lyp: str) -> None:
     """Write a gds2klayout-format .map file."""
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(f"# Layer map generated from: {os.path.basename(source_lyp)}\n")
         f.write(f"# {len(entries)} entries\n")
-        f.write(f"# Format: <GDS layer>  <GDS datatype>  <name>\n")
-        f.write(f"#\n")
-
-        # Group by layer number for readability
+        f.write("# Format: <GDS layer>  <GDS datatype>  <n>\n")
+        f.write("#\n")
         prev_layer = None
         for (layer, datatype, name) in sorted(entries, key=lambda x: (x[0], x[1])):
             if prev_layer is not None and layer != prev_layer:
                 f.write('\n')
             f.write(f"{layer:<6} {datatype:<6} {name}\n")
             prev_layer = layer
+    print(f"Wrote {len(entries)} entries -> {out_path!r}")
 
-    print(f"Wrote {len(entries)} entries to {out_path!r}")
 
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
 
 def main():
     if len(sys.argv) < 2:
@@ -195,16 +194,14 @@ def main():
         sys.exit(1)
 
     lyp_path = sys.argv[1]
-    if len(sys.argv) >= 3:
-        map_path = sys.argv[2]
-    else:
-        stem     = os.path.splitext(lyp_path)[0]
-        map_path = stem + '.map'
+    map_path = sys.argv[2] if len(sys.argv) >= 3 else (
+        os.path.splitext(lyp_path)[0] + '.map'
+    )
 
     entries = parse_lyp(lyp_path)
 
     if not entries:
-        print(f"No usable layer entries found in {lyp_path!r} — is this a valid .lyp file?",
+        print(f"No usable entries in {lyp_path!r}. Check stderr for details.",
               file=sys.stderr)
         sys.exit(2)
 
