@@ -120,19 +120,41 @@ def write_layers_module(out_dir, layer_lines):
     print(f"  wrote {out_dir}/layers.py")
 
 
-def write_cell_module(out_dir, cell_name, body_lines, all_cells):
-    """Write one cells/<cell>.py - standalone runnable AND importable."""
-    safe = sanitize(cell_name)
-    fname = out_dir / f"{safe}.py"
-
-    # Detect sub-cells this cell instantiates
-    referenced = []
+def _direct_deps(body_lines, self_safe):
+    """Return list of cell names directly instantiated in body_lines."""
+    deps = []
     for line in body_lines:
         m = re.search(r'cell_(\w+)\.cell_index\(\)', line)
         if m:
             ref = m.group(1)
-            if ref != safe and ref not in referenced:
-                referenced.append(ref)
+            if ref != self_safe and ref not in deps:
+                deps.append(ref)
+    return deps
+
+
+def _transitive_deps(cell_name, all_bodies, visited=None):
+    """Return all dependencies of cell_name in topological order (leaves first)."""
+    if visited is None:
+        visited = []
+    safe = sanitize(cell_name)
+    body = all_bodies.get(cell_name, [])
+    for dep in _direct_deps(body, safe):
+        if dep not in visited:
+            _transitive_deps(dep, all_bodies, visited)
+            if dep not in visited:
+                visited.append(dep)
+    return visited
+
+
+def write_cell_module(out_dir, cell_name, body_lines, all_bodies):
+    """Write one cells/<cell>.py - standalone runnable AND importable."""
+    safe = sanitize(cell_name)
+    fname = out_dir / f"{safe}.py"
+
+    # Direct deps (for imports at top of file)
+    referenced = _direct_deps(body_lines, safe)
+    # Full transitive deps (for standalone block — must create entire sub-tree)
+    all_deps = _transitive_deps(cell_name, all_bodies)
 
     out = []
     w = out.append
@@ -145,7 +167,7 @@ def write_cell_module(out_dir, cell_name, body_lines, all_cells):
     w('import sys, os\n')
     w('sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))\n')
     w('from layers import register_layers\n')
-    for ref in referenced:
+    for ref in all_deps:
         w(f'from {ref} import build as _build_{ref}\n')
     w('\n')
 
@@ -179,8 +201,8 @@ def write_cell_module(out_dir, cell_name, body_lines, all_cells):
     w('    layout.dbu = 0.001\n')
     w('    L = register_layers(layout)\n')
     w('    cells = {}\n')
-    # Build sub-cells first so instance references resolve
-    for ref in referenced:
+    # Build entire sub-tree first (topological order, leaves first)
+    for ref in all_deps:
         w(f'    cells["{ref}"] = layout.create_cell("{ref}")\n')
         w(f'    _build_{ref}(layout, L, cells)\n')
     w(f'    cells["{cell_name}"] = layout.create_cell("{cell_name}")\n')
@@ -248,7 +270,7 @@ def main():
 
     print("Writing cell modules ...")
     for cname in cell_order:
-        write_cell_module(out_dir, cname, cell_bodies.get(cname, []), cell_order)
+        write_cell_module(out_dir, cname, cell_bodies.get(cname, []), cell_bodies)
 
     print("Writing main_ihp.py ...")
     write_main(Path("main_ihp.py"), cell_order)
