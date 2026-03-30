@@ -1,0 +1,111 @@
+# Sky130A / Sky130B layer map
+# sky130A and sky130B share identical GDS layer numbers.
+# Sources:
+#   klayoutmatthias/sky130A_el sky130A.lyt (layer-map section)
+#   open_pdks/sky130/magic/sky130gds.tech  (calma statements)
+#   ShonTaware/SRAM_SKY130 layers.map
+# Format: <GDS layer>  <GDS datatype>  <n>
+#
+# IMPORTANT: if your PDK is installed, generate a fresher copy with:
+#   python lyp2map.py $PDK_ROOT/sky130A/libs.tech/klayout/tech/sky130A.lyp sky130A.map
+
+11     44     ldntm.drawing
+
+18     20     hvtr.drawing
+
+61     20     nsm.drawing
+
+64     5      nwell.pin
+64     13     pwell.res
+64     16     nwell.label
+64     18     dnwell.drawing
+64     20     nwell.drawing
+64     59     pwell.pin
+
+65     13     diff.res
+65     20     diff.drawing
+65     44     tap.drawing
+
+66     5      poly.pin
+66     13     poly.res
+66     16     poly.label
+66     20     poly.drawing
+66     44     licon1.drawing
+
+67     5      li1.pin
+67     16     li1.label
+67     20     li1.drawing
+67     44     mcon.drawing
+
+68     5      met1.pin
+68     16     met1.label
+68     20     met1.drawing
+68     44     via.drawing
+
+69     5      met2.pin
+69     16     met2.label
+69     20     met2.drawing
+69     44     via2.drawing
+
+70     5      met3.pin
+70     16     met3.label
+70     20     met3.drawing
+70     44     via3.drawing
+
+71     5      met4.pin
+71     16     met4.label
+71     20     met4.drawing
+71     44     via4.drawing
+
+72     5      met5.pin
+72     16     met5.label
+72     20     met5.drawing
+
+74     20     rdl.drawing
+74     21     vhvi.drawing
+
+75     20     hvi.drawing
+
+76     5      pad.pin
+76     16     pad.label
+76     20     pad.drawing
+
+78     44     hvtp.drawing
+
+79     20     urpm.drawing
+
+80     20     tunm.drawing
+
+81     2      areaid.core
+81     4      prBoundary.drawing
+81     14     areaid.lowTapDensity
+
+82     20     areaid.npnid
+82     24     areaid.ind
+82     44     areaid.pnpid
+82     64     areaid.cap
+
+83     44     areaid.lvsText
+
+85     44     pmm.drawing
+
+86     20     rpm.drawing
+
+89     44     capm.drawing
+
+92     44     ncm.drawing
+
+93     44     nsdm.drawing
+
+94     20     psdm.drawing
+
+95     20     npc.drawing
+
+97     44     capm2.drawing
+
+122    16     pwell.label
+
+125    20     hvntm.drawing
+125    44     lvtn.drawing
+
+201    20     reram.drawing
