@@ -74,7 +74,10 @@ def parse_script(path):
             continue
 
         if current_cell is not None:
-            cell_bodies[current_cell].append(line)
+            # Skip bare layout.write(...) footer lines that gds2klayout appends
+            import re as _re
+            if not _re.match(r'^layout\.', line.strip()):
+                cell_bodies[current_cell].append(line)
 
     return header_lines, layer_lines, cell_decls, cell_bodies
 

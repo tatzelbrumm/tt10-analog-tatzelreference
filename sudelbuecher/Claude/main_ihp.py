@@ -23,12 +23,10 @@ from reference import build as build_reference
 from tatzelreference_tile import build as build_tatzelreference_tile
 from tt_um_tatzelreference import build as build_tt_um_tatzelreference
 
-# ── setup ────────────────────────────────────────────────────────────
 layout = pya.Layout()
 layout.dbu = 0.001
 L = register_layers(layout)
 
-# ── cell declarations ────────────────────────────────────────────────
 cells = {}
 cells["shortpmos_2x"] = layout.create_cell("shortpmos_2x")
 cells["shortnmos_2x"] = layout.create_cell("shortnmos_2x")
@@ -63,6 +61,5 @@ build_reference(layout, L, cells)
 build_tatzelreference_tile(layout, L, cells)
 build_tt_um_tatzelreference(layout, L, cells)
 
-# ── write output ────────────────────────────────────────────────────
 layout.write("output_ihp.gds")
 print("Written: output_ihp.gds")

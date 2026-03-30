@@ -21,6 +21,24 @@ import pya
 def register_layers(layout):
     class Layers: pass
     L = Layers()
-    L.L_81_53 = layout.layer(81, 53)  # TODO remap for IHP
-    L.L_235_4 = layout.layer(235, 4)  # TODO remap for IHP
+    L.L_nwell_drawing = layout.layer(pya.LayerInfo(64, 20, "nwell.drawing"))
+    L.L_diff_drawing = layout.layer(pya.LayerInfo(65, 20, "diff.drawing"))
+    L.L_tap_drawing = layout.layer(pya.LayerInfo(65, 44, "tap.drawing"))
+    L.L_poly_drawing = layout.layer(pya.LayerInfo(66, 20, "poly.drawing"))
+    L.L_licon1_drawing = layout.layer(pya.LayerInfo(66, 44, "licon1.drawing"))
+    L.L_li1_drawing = layout.layer(pya.LayerInfo(67, 20, "li1.drawing"))
+    L.L_mcon_drawing = layout.layer(pya.LayerInfo(67, 44, "mcon.drawing"))
+    L.L_met1_drawing = layout.layer(pya.LayerInfo(68, 20, "met1.drawing"))
+    L.L_via_drawing = layout.layer(pya.LayerInfo(68, 44, "via.drawing"))
+    L.L_met2_pin = layout.layer(pya.LayerInfo(69, 5, "met2.pin"))
+    L.L_met2_label = layout.layer(pya.LayerInfo(69, 16, "met2.label"))
+    L.L_met2_drawing = layout.layer(pya.LayerInfo(69, 20, "met2.drawing"))
+    L.L_met4_pin = layout.layer(pya.LayerInfo(71, 5, "met4.pin"))
+    L.L_met4_label = layout.layer(pya.LayerInfo(71, 16, "met4.label"))
+    L.L_met4_drawing = layout.layer(pya.LayerInfo(71, 20, "met4.drawing"))
+    L.L_81_53 = layout.layer(81, 53)
+    L.L_nsdm_drawing = layout.layer(pya.LayerInfo(93, 44, "nsdm.drawing"))
+    L.L_psdm_drawing = layout.layer(pya.LayerInfo(94, 20, "psdm.drawing"))
+    L.L_npc_drawing = layout.layer(pya.LayerInfo(95, 20, "npc.drawing"))
+    L.L_235_4 = layout.layer(235, 4)
     return L

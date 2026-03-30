@@ -502,7 +502,6 @@ def build(layout, L, cells):
         pya.DPolygon([pya.DPoint(7, 5), pya.DPoint(9, 5), pya.DPoint(9, 220.76), pya.DPoint(7, 220.76), pya.DPoint(7, 5)]))
 
 # Save
-    layout.write("output.gds")
 
 if __name__ == "__main__":
     # This block only runs when you open this file in KLayout and hit Run.
