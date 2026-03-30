@@ -1,0 +1,8 @@
+magic
+tech ihp-sg13cmos5l
+timestamp 1740851826
+use sky130_fd_pr__nfet_01v8_CJMHQ5  sky130_fd_pr__nfet_01v8_CJMHQ5_0
+timestamp 1740851826
+transform 1 0 229 0 1 244
+box -229 -244 229 244
+<< end >>

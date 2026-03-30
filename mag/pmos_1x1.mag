@@ -1,0 +1,8 @@
+magic
+tech ihp-sg13cmos5l
+timestamp 1740758979
+use sky130_fd_pr__pfet_01v8_K2ZTW6  sky130_fd_pr__pfet_01v8_K2ZTW6_0
+timestamp 1740758979
+transform 1 0 97 0 1 81
+box -97 -81 97 81
+<< end >>

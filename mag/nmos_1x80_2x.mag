@@ -1,5 +1,5 @@
 magic
-tech sky130A
+tech ihp-sg13cmos5l
 timestamp 1741799621
 << psubdiff >>
 rect -37 2104 1114 2106

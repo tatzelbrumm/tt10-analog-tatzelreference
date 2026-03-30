@@ -1,5 +1,5 @@
 magic
-tech sky130A
+tech ihp-sg13cmos5l
 timestamp 1741318042
 << nwell >>
 rect -145 -62 145 62

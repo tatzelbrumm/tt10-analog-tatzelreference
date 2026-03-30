@@ -1,5 +1,5 @@
 magic
-tech sky130A
+tech ihp-sg13cmos5l
 magscale 1 2
 timestamp 1741810117
 use sky130_fd_pr__nfet_01v8_BDGNGK  sky130_fd_pr__nfet_01v8_BDGNGK_0

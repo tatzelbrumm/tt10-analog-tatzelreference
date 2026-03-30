@@ -1,0 +1,8 @@
+magic
+tech ihp-sg13cmos5l
+timestamp 1740829677
+use sky130_fd_pr__nfet_01v8_ZEVE26  sky130_fd_pr__nfet_01v8_ZEVE26_0
+timestamp 1740790599
+transform 0 1 63 -1 0 4029
+box -4029 -63 4029 63
+<< end >>
