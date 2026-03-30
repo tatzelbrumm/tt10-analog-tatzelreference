@@ -6,7 +6,10 @@ import pya
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from layers import register_layers
+from nmos1x20_8x import build as _build_nmos1x20_8x
 from nmos_1x80_2x import build as _build_nmos_1x80_2x
+from pmos_7x import build as _build_pmos_7x
+from nmos_5x import build as _build_nmos_5x
 from OgueyAebischer_p7_n5 import build as _build_OgueyAebischer_p7_n5
 
 def build(layout, L, cells):
@@ -136,8 +139,14 @@ if __name__ == "__main__":
     layout.dbu = 0.001
     L = register_layers(layout)
     cells = {}
+    cells["nmos1x20_8x"] = layout.create_cell("nmos1x20_8x")
+    _build_nmos1x20_8x(layout, L, cells)
     cells["nmos_1x80_2x"] = layout.create_cell("nmos_1x80_2x")
     _build_nmos_1x80_2x(layout, L, cells)
+    cells["pmos_7x"] = layout.create_cell("pmos_7x")
+    _build_pmos_7x(layout, L, cells)
+    cells["nmos_5x"] = layout.create_cell("nmos_5x")
+    _build_nmos_5x(layout, L, cells)
     cells["OgueyAebischer_p7_n5"] = layout.create_cell("OgueyAebischer_p7_n5")
     _build_OgueyAebischer_p7_n5(layout, L, cells)
     cells["OgueyAebischerBias"] = layout.create_cell("OgueyAebischerBias")

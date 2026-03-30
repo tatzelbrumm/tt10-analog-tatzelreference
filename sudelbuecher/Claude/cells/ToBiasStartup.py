@@ -8,6 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from layers import register_layers
 from shortpmos_2x import build as _build_shortpmos_2x
 from shortnmos_2x import build as _build_shortnmos_2x
+from sky130_fd_pr__nfet_01v8_BDGNGK import build as _build_sky130_fd_pr__nfet_01v8_BDGNGK
 from nmos_8x2 import build as _build_nmos_8x2
 from flatpmos1x0_3 import build as _build_flatpmos1x0_3
 
@@ -583,6 +584,8 @@ if __name__ == "__main__":
     _build_shortpmos_2x(layout, L, cells)
     cells["shortnmos_2x"] = layout.create_cell("shortnmos_2x")
     _build_shortnmos_2x(layout, L, cells)
+    cells["sky130_fd_pr__nfet_01v8_BDGNGK"] = layout.create_cell("sky130_fd_pr__nfet_01v8_BDGNGK")
+    _build_sky130_fd_pr__nfet_01v8_BDGNGK(layout, L, cells)
     cells["nmos_8x2"] = layout.create_cell("nmos_8x2")
     _build_nmos_8x2(layout, L, cells)
     cells["flatpmos1x0_3"] = layout.create_cell("flatpmos1x0_3")
