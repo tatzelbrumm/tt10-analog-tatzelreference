@@ -24,42 +24,42 @@ def build_reference(cell, L, cells):
                    pya.Trans(0, False, pya.Vector(-6275, -1290)))
     _txt.halign = 1
     _txt.valign = 1
-    cell.shapes(L.L_69_5).insert(_txt)
-    cell.shapes(L.L_69_16).insert(
+    cell.shapes(L.L_met2_pin).insert(_txt)
+    cell.shapes(L.L_met2_label).insert(
         pya.DPolygon([pya.DPoint(-6.41, -1.42), pya.DPoint(-6.14, -1.42), pya.DPoint(-6.14, -1.16), pya.DPoint(-6.41, -1.16), pya.DPoint(-6.41, -1.42)]))
     _txt = pya.Text("vdd",
                    pya.Trans(0, False, pya.Vector(-6275, 4000)))
     _txt.halign = 1
     _txt.valign = 1
-    cell.shapes(L.L_69_5).insert(_txt)
-    cell.shapes(L.L_69_16).insert(
+    cell.shapes(L.L_met2_pin).insert(_txt)
+    cell.shapes(L.L_met2_label).insert(
         pya.DPolygon([pya.DPoint(-6.41, 3.87), pya.DPoint(-6.14, 3.87), pya.DPoint(-6.14, 4.13), pya.DPoint(-6.41, 4.13), pya.DPoint(-6.41, 3.87)]))
     _txt = pya.Text("vbp",
                    pya.Trans(0, False, pya.Vector(-6275, 1940)))
     _txt.halign = 1
     _txt.valign = 1
-    cell.shapes(L.L_69_5).insert(_txt)
-    cell.shapes(L.L_69_16).insert(
+    cell.shapes(L.L_met2_pin).insert(_txt)
+    cell.shapes(L.L_met2_label).insert(
         pya.DPolygon([pya.DPoint(-6.41, 1.81), pya.DPoint(-6.14, 1.81), pya.DPoint(-6.14, 2.07), pya.DPoint(-6.41, 2.07), pya.DPoint(-6.41, 1.81)]))
     _txt = pya.Text("vbn",
                    pya.Trans(0, False, pya.Vector(-6275, 1540)))
     _txt.halign = 1
     _txt.valign = 1
-    cell.shapes(L.L_69_5).insert(_txt)
-    cell.shapes(L.L_69_16).insert(
+    cell.shapes(L.L_met2_pin).insert(_txt)
+    cell.shapes(L.L_met2_label).insert(
         pya.DPolygon([pya.DPoint(-6.41, 1.41), pya.DPoint(-6.14, 1.41), pya.DPoint(-6.14, 1.67), pya.DPoint(-6.41, 1.67), pya.DPoint(-6.41, 1.41)]))
     _txt = pya.Text("vbr",
                    pya.Trans(0, False, pya.Vector(-6275, 1140)))
     _txt.halign = 1
     _txt.valign = 1
-    cell.shapes(L.L_69_5).insert(_txt)
-    cell.shapes(L.L_69_16).insert(
+    cell.shapes(L.L_met2_pin).insert(_txt)
+    cell.shapes(L.L_met2_label).insert(
         pya.DPolygon([pya.DPoint(-6.41, 1.01), pya.DPoint(-6.14, 1.01), pya.DPoint(-6.14, 1.27), pya.DPoint(-6.41, 1.27), pya.DPoint(-6.41, 1.01)]))
     _txt = pya.Text("disable",
                    pya.Trans(0, False, pya.Vector(-6275, 740)))
     _txt.halign = 1
     _txt.valign = 1
-    cell.shapes(L.L_69_5).insert(_txt)
-    cell.shapes(L.L_69_16).insert(
+    cell.shapes(L.L_met2_pin).insert(_txt)
+    cell.shapes(L.L_met2_label).insert(
         pya.DPolygon([pya.DPoint(-6.41, 0.61), pya.DPoint(-6.14, 0.61), pya.DPoint(-6.14, 0.87), pya.DPoint(-6.41, 0.87), pya.DPoint(-6.41, 0.61)]))
 

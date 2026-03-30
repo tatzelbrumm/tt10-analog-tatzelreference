@@ -11,716 +11,716 @@ def build_nmos1x20_8x(cell, L, cells):
         L     – layers namespace from layers.register_layers()
         cells – dict of all cell objects keyed by cell name
     """
-    cell.shapes(L.L_65_20).insert(
+    cell.shapes(L.L_diff_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.31, -10.29), pya.DPoint(-3.31, -10.29), pya.DPoint(-3.31, 10.29), pya.DPoint(-4.31, 10.29), pya.DPoint(-4.31, -10.29)]))
-    cell.shapes(L.L_65_20).insert(
+    cell.shapes(L.L_diff_drawing).insert(
         pya.DPolygon([pya.DPoint(-3.04, -10.29), pya.DPoint(-2.04, -10.29), pya.DPoint(-2.04, 10.29), pya.DPoint(-3.04, 10.29), pya.DPoint(-3.04, -10.29)]))
-    cell.shapes(L.L_65_20).insert(
+    cell.shapes(L.L_diff_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.77, -10.29), pya.DPoint(-0.77, -10.29), pya.DPoint(-0.77, 10.29), pya.DPoint(-1.77, 10.29), pya.DPoint(-1.77, -10.29)]))
-    cell.shapes(L.L_65_20).insert(
+    cell.shapes(L.L_diff_drawing).insert(
         pya.DPolygon([pya.DPoint(-0.5, -10.29), pya.DPoint(0.5, -10.29), pya.DPoint(0.5, 10.29), pya.DPoint(-0.5, 10.29), pya.DPoint(-0.5, -10.29)]))
-    cell.shapes(L.L_65_20).insert(
+    cell.shapes(L.L_diff_drawing).insert(
         pya.DPolygon([pya.DPoint(0.77, -10.29), pya.DPoint(1.77, -10.29), pya.DPoint(1.77, 10.29), pya.DPoint(0.77, 10.29), pya.DPoint(0.77, -10.29)]))
-    cell.shapes(L.L_65_20).insert(
+    cell.shapes(L.L_diff_drawing).insert(
         pya.DPolygon([pya.DPoint(2.04, -10.29), pya.DPoint(3.04, -10.29), pya.DPoint(3.04, 10.29), pya.DPoint(2.04, 10.29), pya.DPoint(2.04, -10.29)]))
-    cell.shapes(L.L_65_20).insert(
+    cell.shapes(L.L_diff_drawing).insert(
         pya.DPolygon([pya.DPoint(3.31, -10.29), pya.DPoint(4.31, -10.29), pya.DPoint(4.31, 10.29), pya.DPoint(3.31, 10.29), pya.DPoint(3.31, -10.29)]))
-    cell.shapes(L.L_65_20).insert(
+    cell.shapes(L.L_diff_drawing).insert(
         pya.DPolygon([pya.DPoint(4.58, -10.29), pya.DPoint(5.58, -10.29), pya.DPoint(5.58, 10.29), pya.DPoint(4.58, 10.29), pya.DPoint(4.58, -10.29)]))
-    cell.shapes(L.L_93_44).insert(
+    cell.shapes(L.L_nsdm_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.435, -10.415), pya.DPoint(5.705, -10.415), pya.DPoint(5.705, 10.415), pya.DPoint(-4.435, 10.415), pya.DPoint(-4.435, -10.415)]))
-    cell.shapes(L.L_66_20).insert(
+    cell.shapes(L.L_poly_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.75, -10), pya.DPoint(6.03, -10), pya.DPoint(6.03, 10), pya.DPoint(-4.75, 10), pya.DPoint(-4.75, -10)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.235, 10.06), pya.DPoint(-4.065, 10.06), pya.DPoint(-4.065, 10.23), pya.DPoint(-4.235, 10.23), pya.DPoint(-4.235, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-3.895, 10.06), pya.DPoint(-3.725, 10.06), pya.DPoint(-3.725, 10.23), pya.DPoint(-3.895, 10.23), pya.DPoint(-3.895, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-3.555, 10.06), pya.DPoint(-3.385, 10.06), pya.DPoint(-3.385, 10.23), pya.DPoint(-3.555, 10.23), pya.DPoint(-3.555, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-2.965, 10.06), pya.DPoint(-2.795, 10.06), pya.DPoint(-2.795, 10.23), pya.DPoint(-2.965, 10.23), pya.DPoint(-2.965, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-2.625, 10.06), pya.DPoint(-2.455, 10.06), pya.DPoint(-2.455, 10.23), pya.DPoint(-2.625, 10.23), pya.DPoint(-2.625, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-2.285, 10.06), pya.DPoint(-2.115, 10.06), pya.DPoint(-2.115, 10.23), pya.DPoint(-2.285, 10.23), pya.DPoint(-2.285, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.695, 10.06), pya.DPoint(-1.525, 10.06), pya.DPoint(-1.525, 10.23), pya.DPoint(-1.695, 10.23), pya.DPoint(-1.695, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.355, 10.06), pya.DPoint(-1.185, 10.06), pya.DPoint(-1.185, 10.23), pya.DPoint(-1.355, 10.23), pya.DPoint(-1.355, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.015, 10.06), pya.DPoint(-0.845, 10.06), pya.DPoint(-0.845, 10.23), pya.DPoint(-1.015, 10.23), pya.DPoint(-1.015, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-0.425, 10.06), pya.DPoint(-0.255, 10.06), pya.DPoint(-0.255, 10.23), pya.DPoint(-0.425, 10.23), pya.DPoint(-0.425, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-0.085, 10.06), pya.DPoint(0.085, 10.06), pya.DPoint(0.085, 10.23), pya.DPoint(-0.085, 10.23), pya.DPoint(-0.085, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(0.255, 10.06), pya.DPoint(0.425, 10.06), pya.DPoint(0.425, 10.23), pya.DPoint(0.255, 10.23), pya.DPoint(0.255, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(0.845, 10.06), pya.DPoint(1.015, 10.06), pya.DPoint(1.015, 10.23), pya.DPoint(0.845, 10.23), pya.DPoint(0.845, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(1.185, 10.06), pya.DPoint(1.355, 10.06), pya.DPoint(1.355, 10.23), pya.DPoint(1.185, 10.23), pya.DPoint(1.185, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(1.525, 10.06), pya.DPoint(1.695, 10.06), pya.DPoint(1.695, 10.23), pya.DPoint(1.525, 10.23), pya.DPoint(1.525, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(2.115, 10.06), pya.DPoint(2.285, 10.06), pya.DPoint(2.285, 10.23), pya.DPoint(2.115, 10.23), pya.DPoint(2.115, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(2.455, 10.06), pya.DPoint(2.625, 10.06), pya.DPoint(2.625, 10.23), pya.DPoint(2.455, 10.23), pya.DPoint(2.455, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(2.795, 10.06), pya.DPoint(2.965, 10.06), pya.DPoint(2.965, 10.23), pya.DPoint(2.795, 10.23), pya.DPoint(2.795, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(3.385, 10.06), pya.DPoint(3.555, 10.06), pya.DPoint(3.555, 10.23), pya.DPoint(3.385, 10.23), pya.DPoint(3.385, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(3.725, 10.06), pya.DPoint(3.895, 10.06), pya.DPoint(3.895, 10.23), pya.DPoint(3.725, 10.23), pya.DPoint(3.725, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(4.065, 10.06), pya.DPoint(4.235, 10.06), pya.DPoint(4.235, 10.23), pya.DPoint(4.065, 10.23), pya.DPoint(4.065, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(4.655, 10.06), pya.DPoint(4.825, 10.06), pya.DPoint(4.825, 10.23), pya.DPoint(4.655, 10.23), pya.DPoint(4.655, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(4.995, 10.06), pya.DPoint(5.165, 10.06), pya.DPoint(5.165, 10.23), pya.DPoint(4.995, 10.23), pya.DPoint(4.995, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.335, 10.06), pya.DPoint(5.505, 10.06), pya.DPoint(5.505, 10.23), pya.DPoint(5.335, 10.23), pya.DPoint(5.335, 10.06)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 9.775), pya.DPoint(-4.5, 9.775), pya.DPoint(-4.5, 9.945), pya.DPoint(-4.67, 9.945), pya.DPoint(-4.67, 9.775)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 9.775), pya.DPoint(5.94, 9.775), pya.DPoint(5.94, 9.945), pya.DPoint(5.77, 9.945), pya.DPoint(5.77, 9.775)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 9.435), pya.DPoint(-4.5, 9.435), pya.DPoint(-4.5, 9.605), pya.DPoint(-4.67, 9.605), pya.DPoint(-4.67, 9.435)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 9.435), pya.DPoint(5.94, 9.435), pya.DPoint(5.94, 9.605), pya.DPoint(5.77, 9.605), pya.DPoint(5.77, 9.435)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 9.095), pya.DPoint(-4.5, 9.095), pya.DPoint(-4.5, 9.265), pya.DPoint(-4.67, 9.265), pya.DPoint(-4.67, 9.095)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 9.095), pya.DPoint(5.94, 9.095), pya.DPoint(5.94, 9.265), pya.DPoint(5.77, 9.265), pya.DPoint(5.77, 9.095)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 8.755), pya.DPoint(-4.5, 8.755), pya.DPoint(-4.5, 8.925), pya.DPoint(-4.67, 8.925), pya.DPoint(-4.67, 8.755)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 8.755), pya.DPoint(5.94, 8.755), pya.DPoint(5.94, 8.925), pya.DPoint(5.77, 8.925), pya.DPoint(5.77, 8.755)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 8.415), pya.DPoint(-4.5, 8.415), pya.DPoint(-4.5, 8.585), pya.DPoint(-4.67, 8.585), pya.DPoint(-4.67, 8.415)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 8.415), pya.DPoint(5.94, 8.415), pya.DPoint(5.94, 8.585), pya.DPoint(5.77, 8.585), pya.DPoint(5.77, 8.415)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 8.075), pya.DPoint(-4.5, 8.075), pya.DPoint(-4.5, 8.245), pya.DPoint(-4.67, 8.245), pya.DPoint(-4.67, 8.075)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 8.075), pya.DPoint(5.94, 8.075), pya.DPoint(5.94, 8.245), pya.DPoint(5.77, 8.245), pya.DPoint(5.77, 8.075)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 7.735), pya.DPoint(-4.5, 7.735), pya.DPoint(-4.5, 7.905), pya.DPoint(-4.67, 7.905), pya.DPoint(-4.67, 7.735)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 7.735), pya.DPoint(5.94, 7.735), pya.DPoint(5.94, 7.905), pya.DPoint(5.77, 7.905), pya.DPoint(5.77, 7.735)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 7.395), pya.DPoint(-4.5, 7.395), pya.DPoint(-4.5, 7.565), pya.DPoint(-4.67, 7.565), pya.DPoint(-4.67, 7.395)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 7.395), pya.DPoint(5.94, 7.395), pya.DPoint(5.94, 7.565), pya.DPoint(5.77, 7.565), pya.DPoint(5.77, 7.395)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 7.055), pya.DPoint(-4.5, 7.055), pya.DPoint(-4.5, 7.225), pya.DPoint(-4.67, 7.225), pya.DPoint(-4.67, 7.055)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 7.055), pya.DPoint(5.94, 7.055), pya.DPoint(5.94, 7.225), pya.DPoint(5.77, 7.225), pya.DPoint(5.77, 7.055)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 6.715), pya.DPoint(-4.5, 6.715), pya.DPoint(-4.5, 6.885), pya.DPoint(-4.67, 6.885), pya.DPoint(-4.67, 6.715)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 6.715), pya.DPoint(5.94, 6.715), pya.DPoint(5.94, 6.885), pya.DPoint(5.77, 6.885), pya.DPoint(5.77, 6.715)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 6.375), pya.DPoint(-4.5, 6.375), pya.DPoint(-4.5, 6.545), pya.DPoint(-4.67, 6.545), pya.DPoint(-4.67, 6.375)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 6.375), pya.DPoint(5.94, 6.375), pya.DPoint(5.94, 6.545), pya.DPoint(5.77, 6.545), pya.DPoint(5.77, 6.375)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 6.035), pya.DPoint(-4.5, 6.035), pya.DPoint(-4.5, 6.205), pya.DPoint(-4.67, 6.205), pya.DPoint(-4.67, 6.035)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 6.035), pya.DPoint(5.94, 6.035), pya.DPoint(5.94, 6.205), pya.DPoint(5.77, 6.205), pya.DPoint(5.77, 6.035)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 5.695), pya.DPoint(-4.5, 5.695), pya.DPoint(-4.5, 5.865), pya.DPoint(-4.67, 5.865), pya.DPoint(-4.67, 5.695)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 5.695), pya.DPoint(5.94, 5.695), pya.DPoint(5.94, 5.865), pya.DPoint(5.77, 5.865), pya.DPoint(5.77, 5.695)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 5.355), pya.DPoint(-4.5, 5.355), pya.DPoint(-4.5, 5.525), pya.DPoint(-4.67, 5.525), pya.DPoint(-4.67, 5.355)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 5.355), pya.DPoint(5.94, 5.355), pya.DPoint(5.94, 5.525), pya.DPoint(5.77, 5.525), pya.DPoint(5.77, 5.355)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 5.015), pya.DPoint(-4.5, 5.015), pya.DPoint(-4.5, 5.185), pya.DPoint(-4.67, 5.185), pya.DPoint(-4.67, 5.015)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 5.015), pya.DPoint(5.94, 5.015), pya.DPoint(5.94, 5.185), pya.DPoint(5.77, 5.185), pya.DPoint(5.77, 5.015)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 4.675), pya.DPoint(-4.5, 4.675), pya.DPoint(-4.5, 4.845), pya.DPoint(-4.67, 4.845), pya.DPoint(-4.67, 4.675)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 4.675), pya.DPoint(5.94, 4.675), pya.DPoint(5.94, 4.845), pya.DPoint(5.77, 4.845), pya.DPoint(5.77, 4.675)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 4.335), pya.DPoint(-4.5, 4.335), pya.DPoint(-4.5, 4.505), pya.DPoint(-4.67, 4.505), pya.DPoint(-4.67, 4.335)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 4.335), pya.DPoint(5.94, 4.335), pya.DPoint(5.94, 4.505), pya.DPoint(5.77, 4.505), pya.DPoint(5.77, 4.335)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 3.995), pya.DPoint(-4.5, 3.995), pya.DPoint(-4.5, 4.165), pya.DPoint(-4.67, 4.165), pya.DPoint(-4.67, 3.995)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 3.995), pya.DPoint(5.94, 3.995), pya.DPoint(5.94, 4.165), pya.DPoint(5.77, 4.165), pya.DPoint(5.77, 3.995)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 3.655), pya.DPoint(-4.5, 3.655), pya.DPoint(-4.5, 3.825), pya.DPoint(-4.67, 3.825), pya.DPoint(-4.67, 3.655)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 3.655), pya.DPoint(5.94, 3.655), pya.DPoint(5.94, 3.825), pya.DPoint(5.77, 3.825), pya.DPoint(5.77, 3.655)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 3.315), pya.DPoint(-4.5, 3.315), pya.DPoint(-4.5, 3.485), pya.DPoint(-4.67, 3.485), pya.DPoint(-4.67, 3.315)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 3.315), pya.DPoint(5.94, 3.315), pya.DPoint(5.94, 3.485), pya.DPoint(5.77, 3.485), pya.DPoint(5.77, 3.315)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 2.975), pya.DPoint(-4.5, 2.975), pya.DPoint(-4.5, 3.145), pya.DPoint(-4.67, 3.145), pya.DPoint(-4.67, 2.975)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 2.975), pya.DPoint(5.94, 2.975), pya.DPoint(5.94, 3.145), pya.DPoint(5.77, 3.145), pya.DPoint(5.77, 2.975)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 2.635), pya.DPoint(-4.5, 2.635), pya.DPoint(-4.5, 2.805), pya.DPoint(-4.67, 2.805), pya.DPoint(-4.67, 2.635)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 2.635), pya.DPoint(5.94, 2.635), pya.DPoint(5.94, 2.805), pya.DPoint(5.77, 2.805), pya.DPoint(5.77, 2.635)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 2.295), pya.DPoint(-4.5, 2.295), pya.DPoint(-4.5, 2.465), pya.DPoint(-4.67, 2.465), pya.DPoint(-4.67, 2.295)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 2.295), pya.DPoint(5.94, 2.295), pya.DPoint(5.94, 2.465), pya.DPoint(5.77, 2.465), pya.DPoint(5.77, 2.295)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 1.955), pya.DPoint(-4.5, 1.955), pya.DPoint(-4.5, 2.125), pya.DPoint(-4.67, 2.125), pya.DPoint(-4.67, 1.955)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 1.955), pya.DPoint(5.94, 1.955), pya.DPoint(5.94, 2.125), pya.DPoint(5.77, 2.125), pya.DPoint(5.77, 1.955)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 1.615), pya.DPoint(-4.5, 1.615), pya.DPoint(-4.5, 1.785), pya.DPoint(-4.67, 1.785), pya.DPoint(-4.67, 1.615)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 1.615), pya.DPoint(5.94, 1.615), pya.DPoint(5.94, 1.785), pya.DPoint(5.77, 1.785), pya.DPoint(5.77, 1.615)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 1.275), pya.DPoint(-4.5, 1.275), pya.DPoint(-4.5, 1.445), pya.DPoint(-4.67, 1.445), pya.DPoint(-4.67, 1.275)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 1.275), pya.DPoint(5.94, 1.275), pya.DPoint(5.94, 1.445), pya.DPoint(5.77, 1.445), pya.DPoint(5.77, 1.275)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 0.935), pya.DPoint(-4.5, 0.935), pya.DPoint(-4.5, 1.105), pya.DPoint(-4.67, 1.105), pya.DPoint(-4.67, 0.935)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 0.935), pya.DPoint(5.94, 0.935), pya.DPoint(5.94, 1.105), pya.DPoint(5.77, 1.105), pya.DPoint(5.77, 0.935)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 0.595), pya.DPoint(-4.5, 0.595), pya.DPoint(-4.5, 0.765), pya.DPoint(-4.67, 0.765), pya.DPoint(-4.67, 0.595)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 0.595), pya.DPoint(5.94, 0.595), pya.DPoint(5.94, 0.765), pya.DPoint(5.77, 0.765), pya.DPoint(5.77, 0.595)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 0.255), pya.DPoint(-4.5, 0.255), pya.DPoint(-4.5, 0.425), pya.DPoint(-4.67, 0.425), pya.DPoint(-4.67, 0.255)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 0.255), pya.DPoint(5.94, 0.255), pya.DPoint(5.94, 0.425), pya.DPoint(5.77, 0.425), pya.DPoint(5.77, 0.255)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -0.085), pya.DPoint(-4.5, -0.085), pya.DPoint(-4.5, 0.085), pya.DPoint(-4.67, 0.085), pya.DPoint(-4.67, -0.085)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -0.085), pya.DPoint(5.94, -0.085), pya.DPoint(5.94, 0.085), pya.DPoint(5.77, 0.085), pya.DPoint(5.77, -0.085)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -0.425), pya.DPoint(-4.5, -0.425), pya.DPoint(-4.5, -0.255), pya.DPoint(-4.67, -0.255), pya.DPoint(-4.67, -0.425)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -0.425), pya.DPoint(5.94, -0.425), pya.DPoint(5.94, -0.255), pya.DPoint(5.77, -0.255), pya.DPoint(5.77, -0.425)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -0.765), pya.DPoint(-4.5, -0.765), pya.DPoint(-4.5, -0.595), pya.DPoint(-4.67, -0.595), pya.DPoint(-4.67, -0.765)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -0.765), pya.DPoint(5.94, -0.765), pya.DPoint(5.94, -0.595), pya.DPoint(5.77, -0.595), pya.DPoint(5.77, -0.765)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -1.105), pya.DPoint(-4.5, -1.105), pya.DPoint(-4.5, -0.935), pya.DPoint(-4.67, -0.935), pya.DPoint(-4.67, -1.105)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -1.105), pya.DPoint(5.94, -1.105), pya.DPoint(5.94, -0.935), pya.DPoint(5.77, -0.935), pya.DPoint(5.77, -1.105)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -1.445), pya.DPoint(-4.5, -1.445), pya.DPoint(-4.5, -1.275), pya.DPoint(-4.67, -1.275), pya.DPoint(-4.67, -1.445)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -1.445), pya.DPoint(5.94, -1.445), pya.DPoint(5.94, -1.275), pya.DPoint(5.77, -1.275), pya.DPoint(5.77, -1.445)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -1.785), pya.DPoint(-4.5, -1.785), pya.DPoint(-4.5, -1.615), pya.DPoint(-4.67, -1.615), pya.DPoint(-4.67, -1.785)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -1.785), pya.DPoint(5.94, -1.785), pya.DPoint(5.94, -1.615), pya.DPoint(5.77, -1.615), pya.DPoint(5.77, -1.785)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -2.125), pya.DPoint(-4.5, -2.125), pya.DPoint(-4.5, -1.955), pya.DPoint(-4.67, -1.955), pya.DPoint(-4.67, -2.125)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -2.125), pya.DPoint(5.94, -2.125), pya.DPoint(5.94, -1.955), pya.DPoint(5.77, -1.955), pya.DPoint(5.77, -2.125)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -2.465), pya.DPoint(-4.5, -2.465), pya.DPoint(-4.5, -2.295), pya.DPoint(-4.67, -2.295), pya.DPoint(-4.67, -2.465)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -2.465), pya.DPoint(5.94, -2.465), pya.DPoint(5.94, -2.295), pya.DPoint(5.77, -2.295), pya.DPoint(5.77, -2.465)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -2.805), pya.DPoint(-4.5, -2.805), pya.DPoint(-4.5, -2.635), pya.DPoint(-4.67, -2.635), pya.DPoint(-4.67, -2.805)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -2.805), pya.DPoint(5.94, -2.805), pya.DPoint(5.94, -2.635), pya.DPoint(5.77, -2.635), pya.DPoint(5.77, -2.805)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -3.145), pya.DPoint(-4.5, -3.145), pya.DPoint(-4.5, -2.975), pya.DPoint(-4.67, -2.975), pya.DPoint(-4.67, -3.145)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -3.145), pya.DPoint(5.94, -3.145), pya.DPoint(5.94, -2.975), pya.DPoint(5.77, -2.975), pya.DPoint(5.77, -3.145)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -3.485), pya.DPoint(-4.5, -3.485), pya.DPoint(-4.5, -3.315), pya.DPoint(-4.67, -3.315), pya.DPoint(-4.67, -3.485)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -3.485), pya.DPoint(5.94, -3.485), pya.DPoint(5.94, -3.315), pya.DPoint(5.77, -3.315), pya.DPoint(5.77, -3.485)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -3.825), pya.DPoint(-4.5, -3.825), pya.DPoint(-4.5, -3.655), pya.DPoint(-4.67, -3.655), pya.DPoint(-4.67, -3.825)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -3.825), pya.DPoint(5.94, -3.825), pya.DPoint(5.94, -3.655), pya.DPoint(5.77, -3.655), pya.DPoint(5.77, -3.825)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -4.165), pya.DPoint(-4.5, -4.165), pya.DPoint(-4.5, -3.995), pya.DPoint(-4.67, -3.995), pya.DPoint(-4.67, -4.165)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -4.165), pya.DPoint(5.94, -4.165), pya.DPoint(5.94, -3.995), pya.DPoint(5.77, -3.995), pya.DPoint(5.77, -4.165)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -4.505), pya.DPoint(-4.5, -4.505), pya.DPoint(-4.5, -4.335), pya.DPoint(-4.67, -4.335), pya.DPoint(-4.67, -4.505)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -4.505), pya.DPoint(5.94, -4.505), pya.DPoint(5.94, -4.335), pya.DPoint(5.77, -4.335), pya.DPoint(5.77, -4.505)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -4.845), pya.DPoint(-4.5, -4.845), pya.DPoint(-4.5, -4.675), pya.DPoint(-4.67, -4.675), pya.DPoint(-4.67, -4.845)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -4.845), pya.DPoint(5.94, -4.845), pya.DPoint(5.94, -4.675), pya.DPoint(5.77, -4.675), pya.DPoint(5.77, -4.845)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -5.185), pya.DPoint(-4.5, -5.185), pya.DPoint(-4.5, -5.015), pya.DPoint(-4.67, -5.015), pya.DPoint(-4.67, -5.185)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -5.185), pya.DPoint(5.94, -5.185), pya.DPoint(5.94, -5.015), pya.DPoint(5.77, -5.015), pya.DPoint(5.77, -5.185)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -5.525), pya.DPoint(-4.5, -5.525), pya.DPoint(-4.5, -5.355), pya.DPoint(-4.67, -5.355), pya.DPoint(-4.67, -5.525)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -5.525), pya.DPoint(5.94, -5.525), pya.DPoint(5.94, -5.355), pya.DPoint(5.77, -5.355), pya.DPoint(5.77, -5.525)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -5.865), pya.DPoint(-4.5, -5.865), pya.DPoint(-4.5, -5.695), pya.DPoint(-4.67, -5.695), pya.DPoint(-4.67, -5.865)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -5.865), pya.DPoint(5.94, -5.865), pya.DPoint(5.94, -5.695), pya.DPoint(5.77, -5.695), pya.DPoint(5.77, -5.865)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -6.205), pya.DPoint(-4.5, -6.205), pya.DPoint(-4.5, -6.035), pya.DPoint(-4.67, -6.035), pya.DPoint(-4.67, -6.205)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -6.205), pya.DPoint(5.94, -6.205), pya.DPoint(5.94, -6.035), pya.DPoint(5.77, -6.035), pya.DPoint(5.77, -6.205)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -6.545), pya.DPoint(-4.5, -6.545), pya.DPoint(-4.5, -6.375), pya.DPoint(-4.67, -6.375), pya.DPoint(-4.67, -6.545)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -6.545), pya.DPoint(5.94, -6.545), pya.DPoint(5.94, -6.375), pya.DPoint(5.77, -6.375), pya.DPoint(5.77, -6.545)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -6.885), pya.DPoint(-4.5, -6.885), pya.DPoint(-4.5, -6.715), pya.DPoint(-4.67, -6.715), pya.DPoint(-4.67, -6.885)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -6.885), pya.DPoint(5.94, -6.885), pya.DPoint(5.94, -6.715), pya.DPoint(5.77, -6.715), pya.DPoint(5.77, -6.885)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -7.225), pya.DPoint(-4.5, -7.225), pya.DPoint(-4.5, -7.055), pya.DPoint(-4.67, -7.055), pya.DPoint(-4.67, -7.225)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -7.225), pya.DPoint(5.94, -7.225), pya.DPoint(5.94, -7.055), pya.DPoint(5.77, -7.055), pya.DPoint(5.77, -7.225)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -7.565), pya.DPoint(-4.5, -7.565), pya.DPoint(-4.5, -7.395), pya.DPoint(-4.67, -7.395), pya.DPoint(-4.67, -7.565)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -7.565), pya.DPoint(5.94, -7.565), pya.DPoint(5.94, -7.395), pya.DPoint(5.77, -7.395), pya.DPoint(5.77, -7.565)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -7.905), pya.DPoint(-4.5, -7.905), pya.DPoint(-4.5, -7.735), pya.DPoint(-4.67, -7.735), pya.DPoint(-4.67, -7.905)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -7.905), pya.DPoint(5.94, -7.905), pya.DPoint(5.94, -7.735), pya.DPoint(5.77, -7.735), pya.DPoint(5.77, -7.905)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -8.245), pya.DPoint(-4.5, -8.245), pya.DPoint(-4.5, -8.075), pya.DPoint(-4.67, -8.075), pya.DPoint(-4.67, -8.245)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -8.245), pya.DPoint(5.94, -8.245), pya.DPoint(5.94, -8.075), pya.DPoint(5.77, -8.075), pya.DPoint(5.77, -8.245)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -8.585), pya.DPoint(-4.5, -8.585), pya.DPoint(-4.5, -8.415), pya.DPoint(-4.67, -8.415), pya.DPoint(-4.67, -8.585)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -8.585), pya.DPoint(5.94, -8.585), pya.DPoint(5.94, -8.415), pya.DPoint(5.77, -8.415), pya.DPoint(5.77, -8.585)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -8.925), pya.DPoint(-4.5, -8.925), pya.DPoint(-4.5, -8.755), pya.DPoint(-4.67, -8.755), pya.DPoint(-4.67, -8.925)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -8.925), pya.DPoint(5.94, -8.925), pya.DPoint(5.94, -8.755), pya.DPoint(5.77, -8.755), pya.DPoint(5.77, -8.925)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -9.265), pya.DPoint(-4.5, -9.265), pya.DPoint(-4.5, -9.095), pya.DPoint(-4.67, -9.095), pya.DPoint(-4.67, -9.265)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -9.265), pya.DPoint(5.94, -9.265), pya.DPoint(5.94, -9.095), pya.DPoint(5.77, -9.095), pya.DPoint(5.77, -9.265)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -9.605), pya.DPoint(-4.5, -9.605), pya.DPoint(-4.5, -9.435), pya.DPoint(-4.67, -9.435), pya.DPoint(-4.67, -9.605)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -9.605), pya.DPoint(5.94, -9.605), pya.DPoint(5.94, -9.435), pya.DPoint(5.77, -9.435), pya.DPoint(5.77, -9.605)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -9.945), pya.DPoint(-4.5, -9.945), pya.DPoint(-4.5, -9.775), pya.DPoint(-4.67, -9.775), pya.DPoint(-4.67, -9.945)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -9.945), pya.DPoint(5.94, -9.945), pya.DPoint(5.94, -9.775), pya.DPoint(5.77, -9.775), pya.DPoint(5.77, -9.945)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.235, -10.23), pya.DPoint(-4.065, -10.23), pya.DPoint(-4.065, -10.06), pya.DPoint(-4.235, -10.06), pya.DPoint(-4.235, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-3.895, -10.23), pya.DPoint(-3.725, -10.23), pya.DPoint(-3.725, -10.06), pya.DPoint(-3.895, -10.06), pya.DPoint(-3.895, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-3.555, -10.23), pya.DPoint(-3.385, -10.23), pya.DPoint(-3.385, -10.06), pya.DPoint(-3.555, -10.06), pya.DPoint(-3.555, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-2.965, -10.23), pya.DPoint(-2.795, -10.23), pya.DPoint(-2.795, -10.06), pya.DPoint(-2.965, -10.06), pya.DPoint(-2.965, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-2.625, -10.23), pya.DPoint(-2.455, -10.23), pya.DPoint(-2.455, -10.06), pya.DPoint(-2.625, -10.06), pya.DPoint(-2.625, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-2.285, -10.23), pya.DPoint(-2.115, -10.23), pya.DPoint(-2.115, -10.06), pya.DPoint(-2.285, -10.06), pya.DPoint(-2.285, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.695, -10.23), pya.DPoint(-1.525, -10.23), pya.DPoint(-1.525, -10.06), pya.DPoint(-1.695, -10.06), pya.DPoint(-1.695, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.355, -10.23), pya.DPoint(-1.185, -10.23), pya.DPoint(-1.185, -10.06), pya.DPoint(-1.355, -10.06), pya.DPoint(-1.355, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.015, -10.23), pya.DPoint(-0.845, -10.23), pya.DPoint(-0.845, -10.06), pya.DPoint(-1.015, -10.06), pya.DPoint(-1.015, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-0.425, -10.23), pya.DPoint(-0.255, -10.23), pya.DPoint(-0.255, -10.06), pya.DPoint(-0.425, -10.06), pya.DPoint(-0.425, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(-0.085, -10.23), pya.DPoint(0.085, -10.23), pya.DPoint(0.085, -10.06), pya.DPoint(-0.085, -10.06), pya.DPoint(-0.085, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(0.255, -10.23), pya.DPoint(0.425, -10.23), pya.DPoint(0.425, -10.06), pya.DPoint(0.255, -10.06), pya.DPoint(0.255, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(0.845, -10.23), pya.DPoint(1.015, -10.23), pya.DPoint(1.015, -10.06), pya.DPoint(0.845, -10.06), pya.DPoint(0.845, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(1.185, -10.23), pya.DPoint(1.355, -10.23), pya.DPoint(1.355, -10.06), pya.DPoint(1.185, -10.06), pya.DPoint(1.185, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(1.525, -10.23), pya.DPoint(1.695, -10.23), pya.DPoint(1.695, -10.06), pya.DPoint(1.525, -10.06), pya.DPoint(1.525, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(2.115, -10.23), pya.DPoint(2.285, -10.23), pya.DPoint(2.285, -10.06), pya.DPoint(2.115, -10.06), pya.DPoint(2.115, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(2.455, -10.23), pya.DPoint(2.625, -10.23), pya.DPoint(2.625, -10.06), pya.DPoint(2.455, -10.06), pya.DPoint(2.455, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(2.795, -10.23), pya.DPoint(2.965, -10.23), pya.DPoint(2.965, -10.06), pya.DPoint(2.795, -10.06), pya.DPoint(2.795, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(3.385, -10.23), pya.DPoint(3.555, -10.23), pya.DPoint(3.555, -10.06), pya.DPoint(3.385, -10.06), pya.DPoint(3.385, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(3.725, -10.23), pya.DPoint(3.895, -10.23), pya.DPoint(3.895, -10.06), pya.DPoint(3.725, -10.06), pya.DPoint(3.725, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(4.065, -10.23), pya.DPoint(4.235, -10.23), pya.DPoint(4.235, -10.06), pya.DPoint(4.065, -10.06), pya.DPoint(4.065, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(4.655, -10.23), pya.DPoint(4.825, -10.23), pya.DPoint(4.825, -10.06), pya.DPoint(4.655, -10.06), pya.DPoint(4.655, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(4.995, -10.23), pya.DPoint(5.165, -10.23), pya.DPoint(5.165, -10.06), pya.DPoint(4.995, -10.06), pya.DPoint(4.995, -10.23)]))
-    cell.shapes(L.L_66_44).insert(
+    cell.shapes(L.L_licon1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.335, -10.23), pya.DPoint(5.505, -10.23), pya.DPoint(5.505, -10.06), pya.DPoint(5.335, -10.06), pya.DPoint(5.335, -10.23)]))
-    cell.shapes(L.L_95_20).insert(
+    cell.shapes(L.L_npc_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.77, -10.045), pya.DPoint(-4.4, -10.045), pya.DPoint(-4.4, 10.045), pya.DPoint(-4.77, 10.045), pya.DPoint(-4.77, -10.045)]))
-    cell.shapes(L.L_95_20).insert(
+    cell.shapes(L.L_npc_drawing).insert(
         pya.DPolygon([pya.DPoint(5.67, -10.045), pya.DPoint(6.04, -10.045), pya.DPoint(6.04, 10.045), pya.DPoint(5.67, 10.045), pya.DPoint(5.67, -10.045)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.33, 10.06), pya.DPoint(-3.29, 10.06), pya.DPoint(-3.29, 10.23), pya.DPoint(-4.33, 10.23), pya.DPoint(-4.33, 10.06)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(-3.06, 10.06), pya.DPoint(-2.02, 10.06), pya.DPoint(-2.02, 10.23), pya.DPoint(-3.06, 10.23), pya.DPoint(-3.06, 10.06)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.79, 10.06), pya.DPoint(-0.75, 10.06), pya.DPoint(-0.75, 10.23), pya.DPoint(-1.79, 10.23), pya.DPoint(-1.79, 10.06)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(-0.52, 10.06), pya.DPoint(0.52, 10.06), pya.DPoint(0.52, 10.23), pya.DPoint(-0.52, 10.23), pya.DPoint(-0.52, 10.06)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(0.75, 10.06), pya.DPoint(1.79, 10.06), pya.DPoint(1.79, 10.23), pya.DPoint(0.75, 10.23), pya.DPoint(0.75, 10.06)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(2.02, 10.06), pya.DPoint(3.06, 10.06), pya.DPoint(3.06, 10.23), pya.DPoint(2.02, 10.23), pya.DPoint(2.02, 10.06)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(3.29, 10.06), pya.DPoint(4.33, 10.06), pya.DPoint(4.33, 10.23), pya.DPoint(3.29, 10.23), pya.DPoint(3.29, 10.06)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(4.56, 10.06), pya.DPoint(5.6, 10.06), pya.DPoint(5.6, 10.23), pya.DPoint(4.56, 10.23), pya.DPoint(4.56, 10.06)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -10.03), pya.DPoint(-4.5, -10.03), pya.DPoint(-4.5, 10.03), pya.DPoint(-4.67, 10.03), pya.DPoint(-4.67, -10.03)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -10.03), pya.DPoint(5.94, -10.03), pya.DPoint(5.94, 10.03), pya.DPoint(5.77, 10.03), pya.DPoint(5.77, -10.03)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.33, -10.23), pya.DPoint(-3.29, -10.23), pya.DPoint(-3.29, -10.06), pya.DPoint(-4.33, -10.06), pya.DPoint(-4.33, -10.23)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(-3.06, -10.23), pya.DPoint(-2.02, -10.23), pya.DPoint(-2.02, -10.06), pya.DPoint(-3.06, -10.06), pya.DPoint(-3.06, -10.23)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.79, -10.23), pya.DPoint(-0.75, -10.23), pya.DPoint(-0.75, -10.06), pya.DPoint(-1.79, -10.06), pya.DPoint(-1.79, -10.23)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(-0.52, -10.23), pya.DPoint(0.52, -10.23), pya.DPoint(0.52, -10.06), pya.DPoint(-0.52, -10.06), pya.DPoint(-0.52, -10.23)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(0.75, -10.23), pya.DPoint(1.79, -10.23), pya.DPoint(1.79, -10.06), pya.DPoint(0.75, -10.06), pya.DPoint(0.75, -10.23)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(2.02, -10.23), pya.DPoint(3.06, -10.23), pya.DPoint(3.06, -10.06), pya.DPoint(2.02, -10.06), pya.DPoint(2.02, -10.23)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(3.29, -10.23), pya.DPoint(4.33, -10.23), pya.DPoint(4.33, -10.06), pya.DPoint(3.29, -10.06), pya.DPoint(3.29, -10.23)]))
-    cell.shapes(L.L_67_20).insert(
+    cell.shapes(L.L_li1_drawing).insert(
         pya.DPolygon([pya.DPoint(4.56, -10.23), pya.DPoint(5.6, -10.23), pya.DPoint(5.6, -10.06), pya.DPoint(4.56, -10.06), pya.DPoint(4.56, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.075, 10.06), pya.DPoint(-3.905, 10.06), pya.DPoint(-3.905, 10.23), pya.DPoint(-4.075, 10.23), pya.DPoint(-4.075, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-3.715, 10.06), pya.DPoint(-3.545, 10.06), pya.DPoint(-3.545, 10.23), pya.DPoint(-3.715, 10.23), pya.DPoint(-3.715, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-2.805, 10.06), pya.DPoint(-2.635, 10.06), pya.DPoint(-2.635, 10.23), pya.DPoint(-2.805, 10.23), pya.DPoint(-2.805, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-2.445, 10.06), pya.DPoint(-2.275, 10.06), pya.DPoint(-2.275, 10.23), pya.DPoint(-2.445, 10.23), pya.DPoint(-2.445, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.535, 10.06), pya.DPoint(-1.365, 10.06), pya.DPoint(-1.365, 10.23), pya.DPoint(-1.535, 10.23), pya.DPoint(-1.535, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.175, 10.06), pya.DPoint(-1.005, 10.06), pya.DPoint(-1.005, 10.23), pya.DPoint(-1.175, 10.23), pya.DPoint(-1.175, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-0.265, 10.06), pya.DPoint(-0.095, 10.06), pya.DPoint(-0.095, 10.23), pya.DPoint(-0.265, 10.23), pya.DPoint(-0.265, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(0.095, 10.06), pya.DPoint(0.265, 10.06), pya.DPoint(0.265, 10.23), pya.DPoint(0.095, 10.23), pya.DPoint(0.095, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(1.005, 10.06), pya.DPoint(1.175, 10.06), pya.DPoint(1.175, 10.23), pya.DPoint(1.005, 10.23), pya.DPoint(1.005, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(1.365, 10.06), pya.DPoint(1.535, 10.06), pya.DPoint(1.535, 10.23), pya.DPoint(1.365, 10.23), pya.DPoint(1.365, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(2.275, 10.06), pya.DPoint(2.445, 10.06), pya.DPoint(2.445, 10.23), pya.DPoint(2.275, 10.23), pya.DPoint(2.275, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(2.635, 10.06), pya.DPoint(2.805, 10.06), pya.DPoint(2.805, 10.23), pya.DPoint(2.635, 10.23), pya.DPoint(2.635, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(3.545, 10.06), pya.DPoint(3.715, 10.06), pya.DPoint(3.715, 10.23), pya.DPoint(3.545, 10.23), pya.DPoint(3.545, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(3.905, 10.06), pya.DPoint(4.075, 10.06), pya.DPoint(4.075, 10.23), pya.DPoint(3.905, 10.23), pya.DPoint(3.905, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(4.815, 10.06), pya.DPoint(4.985, 10.06), pya.DPoint(4.985, 10.23), pya.DPoint(4.815, 10.23), pya.DPoint(4.815, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.175, 10.06), pya.DPoint(5.345, 10.06), pya.DPoint(5.345, 10.23), pya.DPoint(5.175, 10.23), pya.DPoint(5.175, 10.06)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 9.635), pya.DPoint(-4.5, 9.635), pya.DPoint(-4.5, 9.805), pya.DPoint(-4.67, 9.805), pya.DPoint(-4.67, 9.635)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 9.635), pya.DPoint(5.94, 9.635), pya.DPoint(5.94, 9.805), pya.DPoint(5.77, 9.805), pya.DPoint(5.77, 9.635)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 9.275), pya.DPoint(-4.5, 9.275), pya.DPoint(-4.5, 9.445), pya.DPoint(-4.67, 9.445), pya.DPoint(-4.67, 9.275)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 9.275), pya.DPoint(5.94, 9.275), pya.DPoint(5.94, 9.445), pya.DPoint(5.77, 9.445), pya.DPoint(5.77, 9.275)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 8.915), pya.DPoint(-4.5, 8.915), pya.DPoint(-4.5, 9.085), pya.DPoint(-4.67, 9.085), pya.DPoint(-4.67, 8.915)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 8.915), pya.DPoint(5.94, 8.915), pya.DPoint(5.94, 9.085), pya.DPoint(5.77, 9.085), pya.DPoint(5.77, 8.915)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 8.555), pya.DPoint(-4.5, 8.555), pya.DPoint(-4.5, 8.725), pya.DPoint(-4.67, 8.725), pya.DPoint(-4.67, 8.555)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 8.555), pya.DPoint(5.94, 8.555), pya.DPoint(5.94, 8.725), pya.DPoint(5.77, 8.725), pya.DPoint(5.77, 8.555)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 8.195), pya.DPoint(-4.5, 8.195), pya.DPoint(-4.5, 8.365), pya.DPoint(-4.67, 8.365), pya.DPoint(-4.67, 8.195)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 8.195), pya.DPoint(5.94, 8.195), pya.DPoint(5.94, 8.365), pya.DPoint(5.77, 8.365), pya.DPoint(5.77, 8.195)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 7.835), pya.DPoint(-4.5, 7.835), pya.DPoint(-4.5, 8.005), pya.DPoint(-4.67, 8.005), pya.DPoint(-4.67, 7.835)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 7.835), pya.DPoint(5.94, 7.835), pya.DPoint(5.94, 8.005), pya.DPoint(5.77, 8.005), pya.DPoint(5.77, 7.835)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 7.475), pya.DPoint(-4.5, 7.475), pya.DPoint(-4.5, 7.645), pya.DPoint(-4.67, 7.645), pya.DPoint(-4.67, 7.475)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 7.475), pya.DPoint(5.94, 7.475), pya.DPoint(5.94, 7.645), pya.DPoint(5.77, 7.645), pya.DPoint(5.77, 7.475)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 7.115), pya.DPoint(-4.5, 7.115), pya.DPoint(-4.5, 7.285), pya.DPoint(-4.67, 7.285), pya.DPoint(-4.67, 7.115)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 7.115), pya.DPoint(5.94, 7.115), pya.DPoint(5.94, 7.285), pya.DPoint(5.77, 7.285), pya.DPoint(5.77, 7.115)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 6.755), pya.DPoint(-4.5, 6.755), pya.DPoint(-4.5, 6.925), pya.DPoint(-4.67, 6.925), pya.DPoint(-4.67, 6.755)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 6.755), pya.DPoint(5.94, 6.755), pya.DPoint(5.94, 6.925), pya.DPoint(5.77, 6.925), pya.DPoint(5.77, 6.755)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 6.395), pya.DPoint(-4.5, 6.395), pya.DPoint(-4.5, 6.565), pya.DPoint(-4.67, 6.565), pya.DPoint(-4.67, 6.395)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 6.395), pya.DPoint(5.94, 6.395), pya.DPoint(5.94, 6.565), pya.DPoint(5.77, 6.565), pya.DPoint(5.77, 6.395)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 6.035), pya.DPoint(-4.5, 6.035), pya.DPoint(-4.5, 6.205), pya.DPoint(-4.67, 6.205), pya.DPoint(-4.67, 6.035)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 6.035), pya.DPoint(5.94, 6.035), pya.DPoint(5.94, 6.205), pya.DPoint(5.77, 6.205), pya.DPoint(5.77, 6.035)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 5.675), pya.DPoint(-4.5, 5.675), pya.DPoint(-4.5, 5.845), pya.DPoint(-4.67, 5.845), pya.DPoint(-4.67, 5.675)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 5.675), pya.DPoint(5.94, 5.675), pya.DPoint(5.94, 5.845), pya.DPoint(5.77, 5.845), pya.DPoint(5.77, 5.675)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 5.315), pya.DPoint(-4.5, 5.315), pya.DPoint(-4.5, 5.485), pya.DPoint(-4.67, 5.485), pya.DPoint(-4.67, 5.315)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 5.315), pya.DPoint(5.94, 5.315), pya.DPoint(5.94, 5.485), pya.DPoint(5.77, 5.485), pya.DPoint(5.77, 5.315)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 4.955), pya.DPoint(-4.5, 4.955), pya.DPoint(-4.5, 5.125), pya.DPoint(-4.67, 5.125), pya.DPoint(-4.67, 4.955)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 4.955), pya.DPoint(5.94, 4.955), pya.DPoint(5.94, 5.125), pya.DPoint(5.77, 5.125), pya.DPoint(5.77, 4.955)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 4.595), pya.DPoint(-4.5, 4.595), pya.DPoint(-4.5, 4.765), pya.DPoint(-4.67, 4.765), pya.DPoint(-4.67, 4.595)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 4.595), pya.DPoint(5.94, 4.595), pya.DPoint(5.94, 4.765), pya.DPoint(5.77, 4.765), pya.DPoint(5.77, 4.595)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 4.235), pya.DPoint(-4.5, 4.235), pya.DPoint(-4.5, 4.405), pya.DPoint(-4.67, 4.405), pya.DPoint(-4.67, 4.235)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 4.235), pya.DPoint(5.94, 4.235), pya.DPoint(5.94, 4.405), pya.DPoint(5.77, 4.405), pya.DPoint(5.77, 4.235)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 3.875), pya.DPoint(-4.5, 3.875), pya.DPoint(-4.5, 4.045), pya.DPoint(-4.67, 4.045), pya.DPoint(-4.67, 3.875)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 3.875), pya.DPoint(5.94, 3.875), pya.DPoint(5.94, 4.045), pya.DPoint(5.77, 4.045), pya.DPoint(5.77, 3.875)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 3.515), pya.DPoint(-4.5, 3.515), pya.DPoint(-4.5, 3.685), pya.DPoint(-4.67, 3.685), pya.DPoint(-4.67, 3.515)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 3.515), pya.DPoint(5.94, 3.515), pya.DPoint(5.94, 3.685), pya.DPoint(5.77, 3.685), pya.DPoint(5.77, 3.515)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 3.155), pya.DPoint(-4.5, 3.155), pya.DPoint(-4.5, 3.325), pya.DPoint(-4.67, 3.325), pya.DPoint(-4.67, 3.155)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 3.155), pya.DPoint(5.94, 3.155), pya.DPoint(5.94, 3.325), pya.DPoint(5.77, 3.325), pya.DPoint(5.77, 3.155)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 2.795), pya.DPoint(-4.5, 2.795), pya.DPoint(-4.5, 2.965), pya.DPoint(-4.67, 2.965), pya.DPoint(-4.67, 2.795)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 2.795), pya.DPoint(5.94, 2.795), pya.DPoint(5.94, 2.965), pya.DPoint(5.77, 2.965), pya.DPoint(5.77, 2.795)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 2.435), pya.DPoint(-4.5, 2.435), pya.DPoint(-4.5, 2.605), pya.DPoint(-4.67, 2.605), pya.DPoint(-4.67, 2.435)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 2.435), pya.DPoint(5.94, 2.435), pya.DPoint(5.94, 2.605), pya.DPoint(5.77, 2.605), pya.DPoint(5.77, 2.435)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 2.075), pya.DPoint(-4.5, 2.075), pya.DPoint(-4.5, 2.245), pya.DPoint(-4.67, 2.245), pya.DPoint(-4.67, 2.075)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 2.075), pya.DPoint(5.94, 2.075), pya.DPoint(5.94, 2.245), pya.DPoint(5.77, 2.245), pya.DPoint(5.77, 2.075)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 1.715), pya.DPoint(-4.5, 1.715), pya.DPoint(-4.5, 1.885), pya.DPoint(-4.67, 1.885), pya.DPoint(-4.67, 1.715)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 1.715), pya.DPoint(5.94, 1.715), pya.DPoint(5.94, 1.885), pya.DPoint(5.77, 1.885), pya.DPoint(5.77, 1.715)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 1.355), pya.DPoint(-4.5, 1.355), pya.DPoint(-4.5, 1.525), pya.DPoint(-4.67, 1.525), pya.DPoint(-4.67, 1.355)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 1.355), pya.DPoint(5.94, 1.355), pya.DPoint(5.94, 1.525), pya.DPoint(5.77, 1.525), pya.DPoint(5.77, 1.355)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 0.995), pya.DPoint(-4.5, 0.995), pya.DPoint(-4.5, 1.165), pya.DPoint(-4.67, 1.165), pya.DPoint(-4.67, 0.995)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 0.995), pya.DPoint(5.94, 0.995), pya.DPoint(5.94, 1.165), pya.DPoint(5.77, 1.165), pya.DPoint(5.77, 0.995)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 0.635), pya.DPoint(-4.5, 0.635), pya.DPoint(-4.5, 0.805), pya.DPoint(-4.67, 0.805), pya.DPoint(-4.67, 0.635)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 0.635), pya.DPoint(5.94, 0.635), pya.DPoint(5.94, 0.805), pya.DPoint(5.77, 0.805), pya.DPoint(5.77, 0.635)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, 0.275), pya.DPoint(-4.5, 0.275), pya.DPoint(-4.5, 0.445), pya.DPoint(-4.67, 0.445), pya.DPoint(-4.67, 0.275)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, 0.275), pya.DPoint(5.94, 0.275), pya.DPoint(5.94, 0.445), pya.DPoint(5.77, 0.445), pya.DPoint(5.77, 0.275)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -0.085), pya.DPoint(-4.5, -0.085), pya.DPoint(-4.5, 0.085), pya.DPoint(-4.67, 0.085), pya.DPoint(-4.67, -0.085)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -0.085), pya.DPoint(5.94, -0.085), pya.DPoint(5.94, 0.085), pya.DPoint(5.77, 0.085), pya.DPoint(5.77, -0.085)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -0.445), pya.DPoint(-4.5, -0.445), pya.DPoint(-4.5, -0.275), pya.DPoint(-4.67, -0.275), pya.DPoint(-4.67, -0.445)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -0.445), pya.DPoint(5.94, -0.445), pya.DPoint(5.94, -0.275), pya.DPoint(5.77, -0.275), pya.DPoint(5.77, -0.445)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -0.805), pya.DPoint(-4.5, -0.805), pya.DPoint(-4.5, -0.635), pya.DPoint(-4.67, -0.635), pya.DPoint(-4.67, -0.805)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -0.805), pya.DPoint(5.94, -0.805), pya.DPoint(5.94, -0.635), pya.DPoint(5.77, -0.635), pya.DPoint(5.77, -0.805)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -1.165), pya.DPoint(-4.5, -1.165), pya.DPoint(-4.5, -0.995), pya.DPoint(-4.67, -0.995), pya.DPoint(-4.67, -1.165)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -1.165), pya.DPoint(5.94, -1.165), pya.DPoint(5.94, -0.995), pya.DPoint(5.77, -0.995), pya.DPoint(5.77, -1.165)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -1.525), pya.DPoint(-4.5, -1.525), pya.DPoint(-4.5, -1.355), pya.DPoint(-4.67, -1.355), pya.DPoint(-4.67, -1.525)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -1.525), pya.DPoint(5.94, -1.525), pya.DPoint(5.94, -1.355), pya.DPoint(5.77, -1.355), pya.DPoint(5.77, -1.525)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -1.885), pya.DPoint(-4.5, -1.885), pya.DPoint(-4.5, -1.715), pya.DPoint(-4.67, -1.715), pya.DPoint(-4.67, -1.885)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -1.885), pya.DPoint(5.94, -1.885), pya.DPoint(5.94, -1.715), pya.DPoint(5.77, -1.715), pya.DPoint(5.77, -1.885)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -2.245), pya.DPoint(-4.5, -2.245), pya.DPoint(-4.5, -2.075), pya.DPoint(-4.67, -2.075), pya.DPoint(-4.67, -2.245)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -2.245), pya.DPoint(5.94, -2.245), pya.DPoint(5.94, -2.075), pya.DPoint(5.77, -2.075), pya.DPoint(5.77, -2.245)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -2.605), pya.DPoint(-4.5, -2.605), pya.DPoint(-4.5, -2.435), pya.DPoint(-4.67, -2.435), pya.DPoint(-4.67, -2.605)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -2.605), pya.DPoint(5.94, -2.605), pya.DPoint(5.94, -2.435), pya.DPoint(5.77, -2.435), pya.DPoint(5.77, -2.605)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -2.965), pya.DPoint(-4.5, -2.965), pya.DPoint(-4.5, -2.795), pya.DPoint(-4.67, -2.795), pya.DPoint(-4.67, -2.965)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -2.965), pya.DPoint(5.94, -2.965), pya.DPoint(5.94, -2.795), pya.DPoint(5.77, -2.795), pya.DPoint(5.77, -2.965)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -3.325), pya.DPoint(-4.5, -3.325), pya.DPoint(-4.5, -3.155), pya.DPoint(-4.67, -3.155), pya.DPoint(-4.67, -3.325)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -3.325), pya.DPoint(5.94, -3.325), pya.DPoint(5.94, -3.155), pya.DPoint(5.77, -3.155), pya.DPoint(5.77, -3.325)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -3.685), pya.DPoint(-4.5, -3.685), pya.DPoint(-4.5, -3.515), pya.DPoint(-4.67, -3.515), pya.DPoint(-4.67, -3.685)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -3.685), pya.DPoint(5.94, -3.685), pya.DPoint(5.94, -3.515), pya.DPoint(5.77, -3.515), pya.DPoint(5.77, -3.685)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -4.045), pya.DPoint(-4.5, -4.045), pya.DPoint(-4.5, -3.875), pya.DPoint(-4.67, -3.875), pya.DPoint(-4.67, -4.045)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -4.045), pya.DPoint(5.94, -4.045), pya.DPoint(5.94, -3.875), pya.DPoint(5.77, -3.875), pya.DPoint(5.77, -4.045)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -4.405), pya.DPoint(-4.5, -4.405), pya.DPoint(-4.5, -4.235), pya.DPoint(-4.67, -4.235), pya.DPoint(-4.67, -4.405)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -4.405), pya.DPoint(5.94, -4.405), pya.DPoint(5.94, -4.235), pya.DPoint(5.77, -4.235), pya.DPoint(5.77, -4.405)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -4.765), pya.DPoint(-4.5, -4.765), pya.DPoint(-4.5, -4.595), pya.DPoint(-4.67, -4.595), pya.DPoint(-4.67, -4.765)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -4.765), pya.DPoint(5.94, -4.765), pya.DPoint(5.94, -4.595), pya.DPoint(5.77, -4.595), pya.DPoint(5.77, -4.765)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -5.125), pya.DPoint(-4.5, -5.125), pya.DPoint(-4.5, -4.955), pya.DPoint(-4.67, -4.955), pya.DPoint(-4.67, -5.125)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -5.125), pya.DPoint(5.94, -5.125), pya.DPoint(5.94, -4.955), pya.DPoint(5.77, -4.955), pya.DPoint(5.77, -5.125)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -5.485), pya.DPoint(-4.5, -5.485), pya.DPoint(-4.5, -5.315), pya.DPoint(-4.67, -5.315), pya.DPoint(-4.67, -5.485)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -5.485), pya.DPoint(5.94, -5.485), pya.DPoint(5.94, -5.315), pya.DPoint(5.77, -5.315), pya.DPoint(5.77, -5.485)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -5.845), pya.DPoint(-4.5, -5.845), pya.DPoint(-4.5, -5.675), pya.DPoint(-4.67, -5.675), pya.DPoint(-4.67, -5.845)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -5.845), pya.DPoint(5.94, -5.845), pya.DPoint(5.94, -5.675), pya.DPoint(5.77, -5.675), pya.DPoint(5.77, -5.845)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -6.205), pya.DPoint(-4.5, -6.205), pya.DPoint(-4.5, -6.035), pya.DPoint(-4.67, -6.035), pya.DPoint(-4.67, -6.205)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -6.205), pya.DPoint(5.94, -6.205), pya.DPoint(5.94, -6.035), pya.DPoint(5.77, -6.035), pya.DPoint(5.77, -6.205)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -6.565), pya.DPoint(-4.5, -6.565), pya.DPoint(-4.5, -6.395), pya.DPoint(-4.67, -6.395), pya.DPoint(-4.67, -6.565)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -6.565), pya.DPoint(5.94, -6.565), pya.DPoint(5.94, -6.395), pya.DPoint(5.77, -6.395), pya.DPoint(5.77, -6.565)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -6.925), pya.DPoint(-4.5, -6.925), pya.DPoint(-4.5, -6.755), pya.DPoint(-4.67, -6.755), pya.DPoint(-4.67, -6.925)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -6.925), pya.DPoint(5.94, -6.925), pya.DPoint(5.94, -6.755), pya.DPoint(5.77, -6.755), pya.DPoint(5.77, -6.925)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -7.285), pya.DPoint(-4.5, -7.285), pya.DPoint(-4.5, -7.115), pya.DPoint(-4.67, -7.115), pya.DPoint(-4.67, -7.285)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -7.285), pya.DPoint(5.94, -7.285), pya.DPoint(5.94, -7.115), pya.DPoint(5.77, -7.115), pya.DPoint(5.77, -7.285)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -7.645), pya.DPoint(-4.5, -7.645), pya.DPoint(-4.5, -7.475), pya.DPoint(-4.67, -7.475), pya.DPoint(-4.67, -7.645)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -7.645), pya.DPoint(5.94, -7.645), pya.DPoint(5.94, -7.475), pya.DPoint(5.77, -7.475), pya.DPoint(5.77, -7.645)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -8.005), pya.DPoint(-4.5, -8.005), pya.DPoint(-4.5, -7.835), pya.DPoint(-4.67, -7.835), pya.DPoint(-4.67, -8.005)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -8.005), pya.DPoint(5.94, -8.005), pya.DPoint(5.94, -7.835), pya.DPoint(5.77, -7.835), pya.DPoint(5.77, -8.005)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -8.365), pya.DPoint(-4.5, -8.365), pya.DPoint(-4.5, -8.195), pya.DPoint(-4.67, -8.195), pya.DPoint(-4.67, -8.365)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -8.365), pya.DPoint(5.94, -8.365), pya.DPoint(5.94, -8.195), pya.DPoint(5.77, -8.195), pya.DPoint(5.77, -8.365)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -8.725), pya.DPoint(-4.5, -8.725), pya.DPoint(-4.5, -8.555), pya.DPoint(-4.67, -8.555), pya.DPoint(-4.67, -8.725)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -8.725), pya.DPoint(5.94, -8.725), pya.DPoint(5.94, -8.555), pya.DPoint(5.77, -8.555), pya.DPoint(5.77, -8.725)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -9.085), pya.DPoint(-4.5, -9.085), pya.DPoint(-4.5, -8.915), pya.DPoint(-4.67, -8.915), pya.DPoint(-4.67, -9.085)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -9.085), pya.DPoint(5.94, -9.085), pya.DPoint(5.94, -8.915), pya.DPoint(5.77, -8.915), pya.DPoint(5.77, -9.085)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -9.445), pya.DPoint(-4.5, -9.445), pya.DPoint(-4.5, -9.275), pya.DPoint(-4.67, -9.275), pya.DPoint(-4.67, -9.445)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -9.445), pya.DPoint(5.94, -9.445), pya.DPoint(5.94, -9.275), pya.DPoint(5.77, -9.275), pya.DPoint(5.77, -9.445)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.67, -9.805), pya.DPoint(-4.5, -9.805), pya.DPoint(-4.5, -9.635), pya.DPoint(-4.67, -9.635), pya.DPoint(-4.67, -9.805)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.77, -9.805), pya.DPoint(5.94, -9.805), pya.DPoint(5.94, -9.635), pya.DPoint(5.77, -9.635), pya.DPoint(5.77, -9.805)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.075, -10.23), pya.DPoint(-3.905, -10.23), pya.DPoint(-3.905, -10.06), pya.DPoint(-4.075, -10.06), pya.DPoint(-4.075, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-3.715, -10.23), pya.DPoint(-3.545, -10.23), pya.DPoint(-3.545, -10.06), pya.DPoint(-3.715, -10.06), pya.DPoint(-3.715, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-2.805, -10.23), pya.DPoint(-2.635, -10.23), pya.DPoint(-2.635, -10.06), pya.DPoint(-2.805, -10.06), pya.DPoint(-2.805, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-2.445, -10.23), pya.DPoint(-2.275, -10.23), pya.DPoint(-2.275, -10.06), pya.DPoint(-2.445, -10.06), pya.DPoint(-2.445, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.535, -10.23), pya.DPoint(-1.365, -10.23), pya.DPoint(-1.365, -10.06), pya.DPoint(-1.535, -10.06), pya.DPoint(-1.535, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.175, -10.23), pya.DPoint(-1.005, -10.23), pya.DPoint(-1.005, -10.06), pya.DPoint(-1.175, -10.06), pya.DPoint(-1.175, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(-0.265, -10.23), pya.DPoint(-0.095, -10.23), pya.DPoint(-0.095, -10.06), pya.DPoint(-0.265, -10.06), pya.DPoint(-0.265, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(0.095, -10.23), pya.DPoint(0.265, -10.23), pya.DPoint(0.265, -10.06), pya.DPoint(0.095, -10.06), pya.DPoint(0.095, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(1.005, -10.23), pya.DPoint(1.175, -10.23), pya.DPoint(1.175, -10.06), pya.DPoint(1.005, -10.06), pya.DPoint(1.005, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(1.365, -10.23), pya.DPoint(1.535, -10.23), pya.DPoint(1.535, -10.06), pya.DPoint(1.365, -10.06), pya.DPoint(1.365, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(2.275, -10.23), pya.DPoint(2.445, -10.23), pya.DPoint(2.445, -10.06), pya.DPoint(2.275, -10.06), pya.DPoint(2.275, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(2.635, -10.23), pya.DPoint(2.805, -10.23), pya.DPoint(2.805, -10.06), pya.DPoint(2.635, -10.06), pya.DPoint(2.635, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(3.545, -10.23), pya.DPoint(3.715, -10.23), pya.DPoint(3.715, -10.06), pya.DPoint(3.545, -10.06), pya.DPoint(3.545, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(3.905, -10.23), pya.DPoint(4.075, -10.23), pya.DPoint(4.075, -10.06), pya.DPoint(3.905, -10.06), pya.DPoint(3.905, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(4.815, -10.23), pya.DPoint(4.985, -10.23), pya.DPoint(4.985, -10.06), pya.DPoint(4.815, -10.06), pya.DPoint(4.815, -10.23)]))
-    cell.shapes(L.L_67_44).insert(
+    cell.shapes(L.L_mcon_drawing).insert(
         pya.DPolygon([pya.DPoint(5.175, -10.23), pya.DPoint(5.345, -10.23), pya.DPoint(5.345, -10.06), pya.DPoint(5.175, -10.06), pya.DPoint(5.175, -10.23)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.31, 10.03), pya.DPoint(-3.31, 10.03), pya.DPoint(-3.31, 10.26), pya.DPoint(-4.31, 10.26), pya.DPoint(-4.31, 10.03)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(-3.04, 10.03), pya.DPoint(-2.04, 10.03), pya.DPoint(-2.04, 10.26), pya.DPoint(-3.04, 10.26), pya.DPoint(-3.04, 10.03)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.77, 10.03), pya.DPoint(-0.77, 10.03), pya.DPoint(-0.77, 10.26), pya.DPoint(-1.77, 10.26), pya.DPoint(-1.77, 10.03)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(-0.5, 10.03), pya.DPoint(0.5, 10.03), pya.DPoint(0.5, 10.26), pya.DPoint(-0.5, 10.26), pya.DPoint(-0.5, 10.03)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(0.77, 10.03), pya.DPoint(1.77, 10.03), pya.DPoint(1.77, 10.26), pya.DPoint(0.77, 10.26), pya.DPoint(0.77, 10.03)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(2.04, 10.03), pya.DPoint(3.04, 10.03), pya.DPoint(3.04, 10.26), pya.DPoint(2.04, 10.26), pya.DPoint(2.04, 10.03)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(3.31, 10.03), pya.DPoint(4.31, 10.03), pya.DPoint(4.31, 10.26), pya.DPoint(3.31, 10.26), pya.DPoint(3.31, 10.03)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(4.58, 10.03), pya.DPoint(5.58, 10.03), pya.DPoint(5.58, 10.26), pya.DPoint(4.58, 10.26), pya.DPoint(4.58, 10.03)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.7, -10.01), pya.DPoint(-4.47, -10.01), pya.DPoint(-4.47, 10.01), pya.DPoint(-4.7, 10.01), pya.DPoint(-4.7, -10.01)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(5.74, -10.01), pya.DPoint(5.97, -10.01), pya.DPoint(5.97, 10.01), pya.DPoint(5.74, 10.01), pya.DPoint(5.74, -10.01)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(-4.31, -10.26), pya.DPoint(-3.31, -10.26), pya.DPoint(-3.31, -10.03), pya.DPoint(-4.31, -10.03), pya.DPoint(-4.31, -10.26)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(-3.04, -10.26), pya.DPoint(-2.04, -10.26), pya.DPoint(-2.04, -10.03), pya.DPoint(-3.04, -10.03), pya.DPoint(-3.04, -10.26)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(-1.77, -10.26), pya.DPoint(-0.77, -10.26), pya.DPoint(-0.77, -10.03), pya.DPoint(-1.77, -10.03), pya.DPoint(-1.77, -10.26)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(-0.5, -10.26), pya.DPoint(0.5, -10.26), pya.DPoint(0.5, -10.03), pya.DPoint(-0.5, -10.03), pya.DPoint(-0.5, -10.26)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(0.77, -10.26), pya.DPoint(1.77, -10.26), pya.DPoint(1.77, -10.03), pya.DPoint(0.77, -10.03), pya.DPoint(0.77, -10.26)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(2.04, -10.26), pya.DPoint(3.04, -10.26), pya.DPoint(3.04, -10.03), pya.DPoint(2.04, -10.03), pya.DPoint(2.04, -10.26)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(3.31, -10.26), pya.DPoint(4.31, -10.26), pya.DPoint(4.31, -10.03), pya.DPoint(3.31, -10.03), pya.DPoint(3.31, -10.26)]))
-    cell.shapes(L.L_68_20).insert(
+    cell.shapes(L.L_met1_drawing).insert(
         pya.DPolygon([pya.DPoint(4.58, -10.26), pya.DPoint(5.58, -10.26), pya.DPoint(5.58, -10.03), pya.DPoint(4.58, -10.03), pya.DPoint(4.58, -10.26)]))
 

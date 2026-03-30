@@ -20,16 +20,16 @@ def build_tatzelreference_tile(cell, L, cells):
         pya.DPolygon([pya.DPoint(0, 0), pya.DPoint(145.36, 0), pya.DPoint(145.36, 225.76), pya.DPoint(0, 225.76), pya.DPoint(0, 0)]))
     cell.shapes(L.L_81_53).insert(
         pya.DPolygon([pya.DPoint(0, 0), pya.DPoint(145.36, 0), pya.DPoint(145.36, 225.76), pya.DPoint(0, 225.76), pya.DPoint(0, 0)]))
-    cell.shapes(L.L_71_20).insert(
+    cell.shapes(L.L_met4_drawing).insert(
         pya.DPolygon([pya.DPoint(39.57, 0), pya.DPoint(40.47, 0), pya.DPoint(40.47, 2), pya.DPoint(39.57, 2), pya.DPoint(39.57, 0)]))
-    cell.shapes(L.L_71_20).insert(
+    cell.shapes(L.L_met4_drawing).insert(
         pya.DPolygon([pya.DPoint(58.89, 0), pya.DPoint(59.79, 0), pya.DPoint(59.79, 2), pya.DPoint(58.89, 2), pya.DPoint(58.89, 0)]))
-    cell.shapes(L.L_71_20).insert(
+    cell.shapes(L.L_met4_drawing).insert(
         pya.DPolygon([pya.DPoint(78.21, 0), pya.DPoint(79.11, 0), pya.DPoint(79.11, 2), pya.DPoint(78.21, 2), pya.DPoint(78.21, 0)]))
-    cell.shapes(L.L_71_20).insert(
+    cell.shapes(L.L_met4_drawing).insert(
         pya.DPolygon([pya.DPoint(97.53, 0), pya.DPoint(98.43, 0), pya.DPoint(98.43, 2), pya.DPoint(97.53, 2), pya.DPoint(97.53, 0)]))
-    cell.shapes(L.L_71_20).insert(
+    cell.shapes(L.L_met4_drawing).insert(
         pya.DPolygon([pya.DPoint(116.85, 0), pya.DPoint(117.75, 0), pya.DPoint(117.75, 2), pya.DPoint(116.85, 2), pya.DPoint(116.85, 0)]))
-    cell.shapes(L.L_71_20).insert(
+    cell.shapes(L.L_met4_drawing).insert(
         pya.DPolygon([pya.DPoint(136.17, 0), pya.DPoint(137.07, 0), pya.DPoint(137.07, 2), pya.DPoint(136.17, 2), pya.DPoint(136.17, 0)]))
 
